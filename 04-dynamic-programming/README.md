@@ -27,7 +27,8 @@ de atendimento de saúde. O problema aparece em dois pontos:
 
 1. **A estação.** Quando o elevador está em manutenção, só resta a escada, e uma pessoa em cadeira de rodas ou com
    carrinho de bebê simplesmente **não consegue sair da plataforma**.
-2. **As calçadas.** Depois da estação, o caminho mais curto passa por calçadas estreitas, irregulares ou quebradas.
+2. **As calçadas.** Depois da estação, o caminho mais curto segue pela Av. Antônio Marques Figueira, com calçadas
+   estreitas, ocupadas pelo comércio e quebradas.
    Quem não passa por elas é **obrigado a descer para a rua**, entre os carros.
 
 A CalçadaLivre modela o trajeto como um grafo, em que cada ponto é um nó e cada trecho de calçada (ou a ligação da
@@ -59,50 +60,70 @@ O programa executa todas as funcionalidades e imprime os resultados no terminal.
 | `rotas.py` | Construção do grafo, regras por perfil, Dijkstra, Floyd-Warshall e memoização |
 | `reformas.py` | Mochila 0/1 por tabulação |
 | `main.py` | Demonstração das funcionalidades |
+| `map.osm` | Mapa da região exportado do OpenStreetMap, de onde vieram os pontos, as coordenadas e os metros de cada trecho (não é lido pelo programa) |
 
 ## Modelagem dos dados
 
 ### Pontos (nós)
 
+Os pontos são cruzamentos reais, tirados do OpenStreetMap. As coordenadas de cada um estão em `dados.COORDENADAS`.
+
 | Nó | Local |
 |---|---|
 | P | Plataforma da Estação Suzano |
-| A | Saída da estação (Rua Prudente de Moraes) |
-| B | Esquina em frente à estação |
-| H | Rua General Francisco Glicério (meio do comércio) |
-| C | Fim do comércio da Glicério |
-| I | Rua Baruel x Rua Professor Roberto David |
-| J | Rua Marechal Deodoro x Rua Felício de Camargo |
-| D | Rua Felício de Camargo x Av. Antônio Marques Figueira |
-| K | Av. Antônio Marques Figueira (meio do trajeto) |
-| E | Av. Antônio Marques Figueira x Rua Professor Roberto David |
-| G | Santa Casa de Suzano (Rua Professor Roberto David, 499 - Vila Figueira) |
+| A | Saída da estação (Rua Doutor Prudente de Moraes) |
+| B | Acesso à Av. Antônio Marques Figueira |
+| C | Av. Antônio Marques Figueira x Rua Monsenhor Nuno |
+| D | Av. Antônio Marques Figueira x Rua Seian Hanashiro |
+| E | Av. Antônio Marques Figueira x Rua Afonso Nicola Redondo |
+| F | Av. Antônio Marques Figueira x Rua Professor Roberto David |
+| G | Santa Casa de Suzano (Rua Professor Roberto David, 499) |
+| K | Rua Kaneji Kodama x Rua Monsenhor Nuno |
+| L | Rua Kaneji Kodama x Rua Seian Hanashiro |
+| M | Rua Kaneji Kodama x Rua Afonso Nicola Redondo |
+| N | Rua Kaneji Kodama x Rua Professor Roberto David |
+| H | Rua General Francisco Glicério x Praça Expedicionário Antônio Garcia |
+| I | Rua Baruel x Rua Horácio de Souza Coutinho |
+| W | Rua Professor Roberto David x Avenida Água Branca |
 
 ### Trechos (arestas)
 
 Cada trecho tem: `origem`, `destino`, `rua`, `metros`, `inclinacao_pct`, `tem_degrau`, `largura_livre_m`, `buracos`
 (0 = piso bom, 3 = muito quebrado), `ocupado` e três valores previstos pelos modelos do notebook de Data Science:
 `indice` de acessibilidade (0 a 100, regressão linear), `p_intransitavel` (probabilidade de ser intransitável para
-cadeira de rodas, regressão logística) e `gravidade` (1 a 5, calculada a partir da probabilidade).
+cadeira de rodas, regressão logística) e `gravidade` (1 a 5, calculada a partir da probabilidade). Os metros de cada
+trecho foram medidos sobre a geometria das ruas no OpenStreetMap.
 
 | Trecho | Rua | Metros | Largura livre | Piso | Índice | Risco | Gravidade |
 |---|---|---|---|---|---|---|---|
 | P–A | Estação Suzano (elevador ou escada) | 30 | 1,50 m | bom | 30 (90 com elevador) | — | 5 (1 com elevador) |
-| A–B | Rua Prudente de Moraes (saída da estação) | 50 | 1,50 m | bom | 93 | 4% | 1 |
-| B–H | Rua General Francisco Glicério (início) | 400 | 0,95 m | pouco quebrado | 50 | 80% | 4 |
-| H–C | Rua General Francisco Glicério (comércio) | 750 | 0,75 m | irregular | 35 | 98% | 5 |
-| C–I | Rua Baruel | 500 | 0,70 m | muito quebrado | 39 | 98% | 5 |
-| I–G | Rua Professor Roberto David (lado da Baruel) | 350 | 0,80 m | irregular, com degrau | 35 | 99% | 5 |
-| H–J | Travessa Glicério → Marechal Deodoro | 250 | 1,00 m | pouco quebrado | 51 | 71% | 4 |
-| C–K | Travessa Glicério → avenida | 400 | 0,85 m | irregular | 47 | 92% | 5 |
-| B–J | Rua Marechal Deodoro | 300 | 1,30 m | pouco quebrado | 77 | 21% | 2 |
-| J–D | Rua Felício de Camargo | 400 | 1,40 m | pouco quebrado | 79 | 27% | 2 |
-| D–K | Av. Antônio Marques Figueira (início) | 1.000 | 1,30 m | pouco quebrado | 71 | 20% | 2 |
-| K–E | Av. Antônio Marques Figueira (até a Santa Casa) | 450 | 1,60 m | bom | 91 | 2% | 1 |
-| E–G | Rua Professor Roberto David (lado da avenida) | 100 | 1,40 m | pouco quebrado | 80 | 16% | 2 |
+| A–B | Rua Doutor Prudente de Moraes (saída da estação) | 359 | 1,50 m | bom | 92 | 7% | 1 |
+| B–C | Avenida Antônio Marques Figueira (início) | 307 | 1,60 m | bom | 89 | 6% | 1 |
+| C–D | Avenida Antônio Marques Figueira (trecho comercial) | 642 | 0,75 m | irregular | 31 | 99% | 5 |
+| D–E | Avenida Antônio Marques Figueira (trecho central) | 487 | 0,85 m | muito quebrado | 38 | 99% | 5 |
+| E–F | Avenida Antônio Marques Figueira (chegada à Santa Casa) | 438 | 0,80 m | irregular, com degrau | 26 | 100% | 5 |
+| F–G | Rua Professor Roberto David (frente da Santa Casa) | 69 | 1,60 m | bom | 95 | 2% | 1 |
+| C–K | Rua Monsenhor Nuno | 121 | 1,30 m | pouco quebrado | 70 | 24% | 2 |
+| K–L | Rua Kaneji Kodama (trecho norte) | 604 | 1,50 m | pouco quebrado | 82 | 22% | 2 |
+| L–M | Rua Kaneji Kodama (trecho central) | 487 | 1,40 m | bom | 85 | 15% | 2 |
+| M–N | Rua Kaneji Kodama (trecho sul) | 443 | 1,50 m | bom | 89 | 9% | 1 |
+| N–G | Rua Professor Roberto David (lado da Kaneji Kodama) | 69 | 1,50 m | bom | 93 | 3% | 1 |
+| D–L | Rua Seian Hanashiro | 113 | 1,00 m | pouco quebrado | 54 | 66% | 4 |
+| E–M | Rua Afonso Nicola Redondo | 127 | 1,10 m | irregular | 54 | 83% | 4 |
+| A–H | Rua General Francisco Glicério (comércio) | 854 | 0,95 m | pouco quebrado | 49 | 94% | 5 |
+| H–I | Rua Baruel | 831 | 0,70 m | muito quebrado | 36 | 100% | 5 |
+| I–W | Rua Horácio de Souza Coutinho (Jardim São Luís) | 646 | 1,10 m | pouco quebrado | 63 | 78% | 4 |
+| W–F | Rua Professor Roberto David (lado oeste) | 83 | 0,90 m | irregular, com degrau | 39 | 98% | 5 |
 
-A rota mais curta (P–A–B–H–C–I–G) soma **2.080 m** e passa pelas ruas mais estreitas: a largura livre cai até 0,70 m.
-A rota pela avenida (P–A–B–J–D–K–E–G) soma **2.330 m**, com larguras de 1,30 m a 1,60 m.
+São três caminhos possíveis da plataforma até a Santa Casa:
+
+| Caminho | Pontos | Distância | Calçadas |
+|---|---|---|---|
+| Pela Av. Antônio Marques Figueira (mais curto) | P–A–B–C–D–E–F–G | **2.332 m** | de 0,75 m a 0,85 m nos três trechos do meio |
+| Pela Rua Kaneji Kodama (paralela à avenida) | P–A–B–C–K–L–M–N–G | **2.420 m** | de 1,30 m a 1,60 m |
+| Pela Glicério e pela Baruel (ruas do Centro) | P–A–H–I–W–F–G | **2.513 m** | de 0,70 m a 1,10 m |
+
+As ruas Seian Hanashiro (D–L) e Afonso Nicola Redondo (E–M) ligam a avenida à Kaneji Kodama no meio do caminho.
 
 O estado do elevador é um parâmetro: `dados.montar_trechos(elevador_funcionando)`. Em manutenção, o trecho P–A passa
 a ter escada e índice baixo; funcionando, deixa de ter degrau.
@@ -227,59 +248,58 @@ maior. Depois, uma varredura de trás para frente reconstrói **quais** itens fo
 **Situação atual: elevador em manutenção**
 
 ```
-Mais curta: P -> A -> B -> H -> C -> I -> G (2080 m)
+Mais curta: P -> A -> B -> C -> D -> E -> F -> G (2332 m)
 
 [cadeira]
   A rota curta OBRIGARIA a ir pela rua ou a desistir do trajeto:
    - trecho P->A [Estação Suzano (elevador em manutenção: só há escada)]: degrau/escada
-   - trecho B->H [Rua General Francisco Glicério (início)]: risco previsto de 80% de ser intransitável (modelo de Data Science)
-   - trecho H->C [Rua General Francisco Glicério (comércio)]: calçada estreita: 0.75 m livres, mínimo 0.90 m (calçada ocupada); risco previsto de 98% ...
-   - trecho C->I [Rua Baruel]: calçada estreita: 0.70 m livres, mínimo 0.90 m; piso muito quebrado; risco previsto de 98% ...
-   - trecho I->G [Rua Professor Roberto David (lado da Baruel)]: calçada estreita: 0.80 m livres, mínimo 0.90 m; degrau/escada; risco previsto de 99% ...
+   - trecho C->D [Avenida Antônio Marques Figueira (trecho comercial)]: calçada estreita: 0.75 m livres, mínimo 0.90 m (calçada ocupada); risco previsto de 99% ...
+   - trecho D->E [Avenida Antônio Marques Figueira (trecho central)]: calçada estreita: 0.85 m livres, mínimo 0.90 m; piso muito quebrado; risco previsto de 99% ...
+   - trecho E->F [Avenida Antônio Marques Figueira (chegada à Santa Casa)]: calçada estreita: 0.80 m livres, mínimo 0.90 m (calçada ocupada); degrau/escada; risco previsto de 100% ...
   NÃO existe rota totalmente acessível. ALERTA: o trajeto exige superar uma barreira intransponível.
 
 [idoso]
   A rota curta é transitável para este perfil.
-  Rota acessível: P -> A -> B -> J -> D -> K -> E -> G (2330 m)
+  Rota acessível: P -> A -> B -> C -> K -> L -> M -> N -> G (2420 m)
 ```
 
 **Cenário após o conserto do elevador**
 
 ```
 [cadeira]
-  Rota acessível: P -> A -> B -> J -> D -> K -> E -> G (2330 m)
+  Rota acessível: P -> A -> B -> C -> K -> L -> M -> N -> G (2420 m)
 [carrinho]
-  Rota acessível: P -> A -> B -> J -> D -> K -> E -> G (2330 m)
+  Rota acessível: P -> A -> B -> C -> K -> L -> M -> N -> G (2420 m)
 ```
 
 Enquanto o elevador está em manutenção, **cadeirantes e pessoas com carrinho não têm rota**: o problema começa na
-própria estação. Com o elevador funcionando, o sistema troca as ruas estreitas do comércio (Glicério e Baruel) pelo
-caminho da Rua Marechal Deodoro, Rua Felício de Camargo e Av. Antônio Marques Figueira: 2.330 m, 250 m mais longo que os
-2.080 m do trajeto curto, porém transitável. O idoso consegue passar pelas ruas estreitas, mas o índice baixo delas
-torna a avenida o caminho de menor custo também para ele.
+própria estação. Com o elevador funcionando, o sistema tira a pessoa da avenida na Rua Monsenhor Nuno e segue pela
+Rua Kaneji Kodama, paralela: 2.420 m, só **88 m a mais** que os 2.332 m do caminho pela avenida, porém transitável. O
+idoso consegue passar pela avenida, mas o índice baixo dela torna a Kaneji Kodama o caminho de menor custo também
+para ele.
 
 **Reformas** (benefício = pessoas por dia × gravidade prevista):
 
 ```
-orçamento R$ 35 mil  -> reformar ['P-A']                                   | benefício 3000
-orçamento R$ 200 mil -> reformar ['P-A', 'B-H', 'I-G']                     | benefício 7250
-orçamento R$ 400 mil -> reformar ['P-A', 'B-H', 'C-I', 'I-G', 'C-K', 'E-G'] | benefício 10950
+orçamento R$ 35 mil  -> reformar ['P-A']                                          | benefício 4500
+orçamento R$ 200 mil -> reformar ['P-A', 'D-E', 'F-G', 'N-G', 'D-L', 'W-F']       | benefício 10550
+orçamento R$ 400 mil -> reformar ['P-A', 'C-D', 'D-E', 'E-F', 'F-G', 'N-G', 'W-F'] | benefício 16450
 ```
 
-O conserto do elevador é sempre a primeira escolha: custa pouco e libera a saída da estação. Com mais orçamento, a
-mochila escolhe os trechos de gravidade alta com mais pessoas por real investido, começando pelo início da Glicério
-(B–H) e pela chegada à Santa Casa pelo lado da Baruel (I–G).
+O conserto do elevador é sempre a primeira escolha: custa pouco e libera a saída da estação. Com R$ 400 mil, a
+mochila inclui os três trechos estreitos da avenida (C–D, D–E e E–F), e o caminho mais curto passa a ser também o
+acessível.
 
 ## Dados
 
-A distância total da rota mais curta, da Estação Suzano até a Santa Casa de Suzano (Rua Professor Roberto David, 499),
-foi **medida no mapa: cerca de 2.080 m** (o Moovit indica 2.092 m e cerca de 27 minutos de caminhada). A rota
-pela avenida, que desvia das calçadas estreitas e quebradas, foi estimada em 2.330 m (250 m a mais).
+Os pontos, as coordenadas e os metros de cada trecho vêm do **OpenStreetMap** (arquivo `map.osm` da região entre a
+Estação Suzano e a Santa Casa). A rota mais curta, pela Av. Antônio Marques Figueira, tem **2.332 m**; o Google Maps
+indica cerca de 2,3 km e 32 minutos a pé para o mesmo trajeto.
 
-Os nomes das ruas seguem o caminho pelo Centro e pela Vila Figueira. A divisão em trechos e as medidas de largura,
-piso e inclinação são **estimadas** e devem ser conferidas no mapa e em campo. O `indice`, o `p_intransitavel` e a
-`gravidade` de cada trecho são os valores previstos pelos modelos do notebook de Data Science (seção 8.1). O notebook
-tem uma célula que confere se os valores do `dados.py` são iguais aos previstos. Nenhuma informação pessoal é usada.
+A largura, o piso, a inclinação e o degrau de cada trecho são **estimados** e devem ser conferidos em campo. O
+`indice`, o `p_intransitavel` e a `gravidade` de cada trecho são os valores previstos pelos modelos do notebook de
+Data Science (seção 8.1). O notebook tem uma célula que confere se os valores do `dados.py` são iguais aos previstos.
+Nenhuma informação pessoal é usada.
 
 ## Limitações
 
@@ -288,7 +308,8 @@ tem uma célula que confere se os valores do `dados.py` são iguais aos previsto
 - Os limites por perfil são valores de referência e podem ser ajustados em `LIMITES`.
 - O estado do elevador é informado manualmente; na solução completa, viria de relatos dos usuários ou do operador.
 - A mochila soma os benefícios de cada reforma separadamente. Ela não garante que os trechos escolhidos formem uma
-  rota acessível completa: reformar só parte da Glicério ainda deixa a rota curta bloqueada.
+  rota acessível completa: com R$ 200 mil, ela reforma só um dos três trechos ruins da avenida (D–E), e a
+  avenida continua bloqueada para cadeira de rodas.
 - Os valores de índice e risco vêm de modelos treinados com uma base simulada; quando houver medições de campo, os
   modelos devem ser retreinados e os valores do `dados.py` atualizados.
 
@@ -297,6 +318,5 @@ tem uma célula que confere se os valores do `dados.py` são iguais aos previsto
 - **Data Science:** o índice de acessibilidade de cada trecho (custo no Dijkstra) vem da regressão linear; a
   probabilidade de o trecho ser intransitável (bloqueio para cadeira de rodas) e a gravidade (benefício na mochila)
   vêm da regressão logística. Os valores são os mesmos do notebook `CalcadaLivre_DataScience.ipynb`.
-
 - **Java (DDD):** a API expõe trechos, barreiras, validações e rotas.
 - **Agile:** as personas (Seu Antônio, Camila e Dona Neide) correspondem aos perfis `cadeira`, `carrinho` e `idoso`.
