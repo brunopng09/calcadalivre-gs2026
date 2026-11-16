@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalçadaLivre — Nova barreira</title>
+    <link rel="stylesheet" th:href="@{/css/estilo.css}">
+</head>
+<body>
+<header class="topo">
+    <div class="container">
+        <p class="marca">CalçadaLivre</p>
+        <h1>Reportar barreira</h1>
+        <p class="subtitulo">Informe o trecho, o tipo de barreira e a gravidade observada na calçada.</p>
+    </div>
+</header>
+
+<nav class="menu">
+    <div class="container">
+        <a class="menu-item" th:href="@{/}">Painel</a>
+        <a class="menu-item" th:href="@{/trechos}">Trechos</a>
+        <a class="menu-item ativo" th:href="@{/barreiras/nova}">Nova barreira</a>
+    </div>
+</nav>
+
+<main class="container">
+    <div class="alerta alerta-erro" th:if="${erro}" th:text="${erro}"></div>
+    <div class="alerta alerta-sucesso" th:if="${sucesso}" th:text="${sucesso}"></div>
+
+    <form class="formulario" th:action="@{/barreiras/salvar}" method="post">
+        <div class="campo">
+            <label for="idTrecho">Trecho</label>
+            <select id="idTrecho" name="idTrecho" required>
+                <option th:each="t : ${trechos}"
+                        th:value="${t.idTrecho}"
+                        th:text="${t.nmRua}"
+                        th:selected="${registroBarreira.idTrecho == t.idTrecho}">Rua</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label for="idTipoBarreira">Tipo de barreira</label>
+            <select id="idTipoBarreira" name="idTipoBarreira" required>
+                <option th:each="tipo : ${tipos}"
+                        th:value="${tipo.idTipoBarreira}"
+                        th:text="${tipo.dsTipoBarreira}"
+                        th:selected="${registroBarreira.idTipoBarreira == tipo.idTipoBarreira}">Tipo</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label for="idUsuario">Usuário</label>
+            <select id="idUsuario" name="idUsuario" required>
+                <option th:each="u : ${usuarios}"
+                        th:value="${u.idUsuario}"
+                        th:text="${u.nmUsuario}"
+                        th:selected="${registroBarreira.idUsuario == u.idUsuario}">Usuário</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label for="nrGravidade">Gravidade (1 a 5)</label>
+            <input id="nrGravidade" name="nrGravidade" type="number" min="1" max="5" step="1" value="3" required>
+        </div>
+
+        <div class="campo">
+            <label for="dsRegistro">Descrição da barreira</label>
+            <textarea id="dsRegistro" name="dsRegistro" rows="4"
+                      placeholder="Ex.: bueiro sem tampa ocupando metade da calçada"
+                      th:text="${registroBarreira.dsRegistro}"></textarea>
+        </div>
+
+        <div class="campo-duplo">
+            <div class="campo">
+                <label for="nrLatitude">Latitude (opcional)</label>
+                <input id="nrLatitude" name="nrLatitude" type="number" step="any" placeholder="-23.5505">
+            </div>
+            <div class="campo">
+                <label for="nrLongitude">Longitude (opcional)</label>
+                <input id="nrLongitude" name="nrLongitude" type="number" step="any" placeholder="-46.6333">
+            </div>
+        </div>
+
+        <div class="acoes">
+            <button class="botao botao-primario" type="submit">Salvar barreira</button>
+            <a class="botao botao-neutro" th:href="@{/}">Cancelar</a>
+        </div>
+    </form>
+</main>
+
+<footer class="rodape">
+    <div class="container">
+        <p>CalçadaLivre — FIAP Global Solution 2026.2 · Disciplina DDD</p>
+    </div>
+</footer>
+</body>
+</html>

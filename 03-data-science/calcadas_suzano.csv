@@ -1,0 +1,651 @@
+id_trecho,rua,bairro,tipo_via,comprimento_m,largura_total_m,largura_livre_m,inclinacao_pct,buracos,tem_degrau,obstaculos_100m,ocupado_comercio,rampa_esquina,piso_tatil,idade_calcada_anos,fluxo_pedestres_hora,indice_acessibilidade,intransitavel_cadeira
+T0001,Rua Felício de Camargo,Centro,coletora,178,1.88,1.61,6.5,0,0,1,0,0,0,13,148,85.1,0
+T0002,Av. Armando Salles de Oliveira,Parque Suzano,arterial,72,2.64,2.49,9.1,2,0,1,0,1,0,18,89,83.4,0
+T0003,Av. Antônio Marques Figueira,Vila Figueira,arterial,75,2.76,2.4,,1,0,3,0,0,1,27,101,76.2,0
+T0004,Av. Antônio Marques Figueira,Vila Figueira,arterial,175,2.6,2.59,11.2,0,0,0,0,1,0,10,108,80.8,0
+T0005,Rua Benjamin Constant,Centro,local,40,1.08,0.4,6.0,1,0,4,1,0,1,27,99,19.9,1
+T0006,Rua Rui Barbosa,Vila Costa,local,75,1.59,1.5,,3,0,0,0,0,0,16,46,62.4,1
+T0007,Rua Nove de Julho,Jardim Santa Helena,local,90,1.71,0.58,2.2,1,0,6,1,0,0,27,129,34.2,1
+T0008,Rua Felício de Camargo,Centro,coletora,130,1.95,1.06,1.4,1,0,3,1,1,0,15,366,63.7,1
+T0009,Av. Armando Salles de Oliveira,Parque Suzano,arterial,212,2.74,1.81,7.8,0,1,4,1,1,0,7,60,63.4,1
+T0010,Rua General Francisco Glicério,Centro,local,132,1.33,0.63,3.2,2,0,2,1,0,0,35,211,32.4,1
+T0011,Rua Missionária Sara Cooper,Jardim Santa Helena,local,213,0.98,0.4,4.2,1,0,1,1,1,1,8,124,39.1,1
+T0012,Rua Nove de Julho,Jardim Santa Helena,local,77,1.33,0.54,2.6,3,0,3,1,0,0,31,97,23.9,1
+T0013,Av. Armando Salles de Oliveira,Parque Suzano,arterial,43,2.61,1.14,3.2,1,1,8,1,0,0,11,51,44.3,1
+T0014,Av. Paulo Portela,Jardim Paulista,arterial,217,2.32,1.86,6.0,0,0,3,0,1,0,9,93,90.3,0
+T0015,Rua Baruel,Vila Figueira,local,139,1.36,1.21,3.0,0,1,1,0,1,0,12,47,72.3,1
+T0016,Rua Rui Barbosa,Vila Costa,local,68,1.7,1.12,4.0,0,0,1,1,1,0,3,105,67.3,1
+T0017,Av. Antônio Marques Figueira,Vila Figueira,arterial,194,2.48,2.31,6.2,0,0,1,0,1,0,23,70,79.1,0
+T0018,Rua Benjamin Constant,Centro,local,198,1.39,0.4,1.7,1,0,5,1,1,1,22,139,44.0,1
+T0019,Rua General Francisco Glicério,Centro,local,191,1.71,0.81,10.6,0,0,4,1,0,0,10,206,43.2,1
+T0020,Rua General Francisco Glicério,Centro,local,150,1.34,0.4,5.7,0,0,7,1,0,0,2,142,29.5,1
+T0021,Rua Baruel,Vila Figueira,local,202,1.31,1.13,8.1,0,0,1,0,0,0,5,46,60.0,0
+T0022,Av. Antônio Marques Figueira,Vila Figueira,arterial,190,2.17,2.04,2.8,2,0,1,0,1,1,33,110,87.1,0
+T0023,Rua Sete de Setembro,Parque Suzano,coletora,150,1.83,1.83,2.4,0,0,0,0,1,0,5,58,96.7,0
+T0024,Rua Prudente de Moraes,Centro,coletora,141,2.3,2.09,2.6,2,0,1,0,0,1,35,385,80.3,0
+T0025,Av. Antônio Marques Figueira,Vila Figueira,arterial,202,2.62,1.6,6.3,3,0,5,1,1,0,28,143,53.5,1
+T0026,Rua Benjamin Constant,Centro,local,71,1.44,0.79,1.4,0,1,1,1,0,0,17,305,43.5,1
+T0027,Rua Felício de Camargo,Centro,coletora,120,2.0,1.26,8.9,2,0,2,1,1,1,29,101,57.1,0
+T0028,Av. Armando Salles de Oliveira,Parque Suzano,arterial,170,2.66,2.36,6.5,0,0,2,0,1,0,6,110,90.4,0
+T0029,Av. Antônio Marques Figueira,centro ,arterial,219,2.12,1.35,5.2,2,1,3,1,1,0,35,52,59.0,1
+T0030,Rua General Francisco Glicério,Centro,local,164,1.24,0.96,5.1,1,0,2,0,0,0,24,333,52.5,1
+T0031,Rua Felício de Camargo,Centro,coletora,96,1.85,0.83,0.4,0,0,4,1,0,0,14,120,60.5,0
+T0032,Rua Tiradentes,Vila Costa,local,119,1.08,0.4,3.2,1,0,6,1,0,0,31,71,28.0,1
+T0033,Rua Rui Barbosa,Vila Costa,local,53,1.45,1.16,3.1,0,0,2,0,0,0,4,115,82.1,0
+T0034,Av. Armando Salles de Oliveira,Parque Suzano,arterial,89,2.56,2.37,1.7,0,0,1,0,1,0,22,63,93.4,0
+T0035,Rua Benjamin Constant,Centro,local,102,1.06,0.51,2.5,0,0,1,1,0,0,20,164,52.0,1
+T0036,Rua Nove de Julho,Jardim Santa Helena,local,91,1.26,0.81,2.0,1,0,3,0,1,0,29,87,57.4,0
+T0037,Rua Professor Roberto David,Vila Figueira,local,80,1.47,0.99,8.3,1,1,3,0,0,0,4,75,42.6,1
+T0038,Av. Antônio Marques Figueira,Vila Figueira,arterial,54,1.53,0.6,8.2,2,0,4,1,1,1,27,92,30.1,1
+T0039,Rua Nove de Julho,Jardim Santa Helena,local,179,1.56,1.52,3.9,0,0,0,0,0,0,2,91,95.0,0
+T0040,Rua Benjamin Constant,Centro,local,126,1.58,0.99,5.0,0,0,1,1,0,0,6,106,58.8,0
+T0041,Rua Sete de Setembro,Parque Suzano,coletora,191,2.09,1.54,3.9,1,0,3,0,0,0,25,269,84.4,0
+T0042,Rua Benjamin Constant,Centro,local,229,1.32,0.95,8.1,1,0,2,0,1,1,22,357,53.9,1
+T0043,Rua General Francisco Glicério,Centro,local,205,0.9,0.4,5.2,0,0,1,1,0,0,6,260,43.0,1
+T0044,Rua Sete de Setembro,Parque Suzano,coletora,169,2.09,2.06,1.9,1,0,0,0,0,0,13,58,78.9,0
+T0045,Rua General Francisco Glicério,Centro,local,127,0.9,0.47,11.7,0,0,2,0,1,0,9,328,41.6,1
+T0046,Rua Baruel,Vila Figueira,local,50,1.36,1.14,13.6,2,1,1,0,0,1,34,65,27.6,1
+T0047,Av. Armando Salles de Oliveira,Parque Suzano,arterial,40,2.4,1.8,2.2,3,0,4,0,0,0,21,85,63.0,1
+T0048,Rua Felício de Camargo,Centro,coletora,152,1.7,1.69,6.6,2,0,0,0,0,0,27,182,76.2,0
+T0049,Av. Paulo Portela,Jardim Paulista,arterial,120,2.59,2.34,4.5,0,0,2,0,1,0,5,91,91.1,0
+T0050,Rua Professor Roberto David,Vila Figueira,local,248,1.84,1.68,3.9,0,1,1,0,0,0,5,193,66.4,0
+T0051,Av. Armando Salles de Oliveira,Parque Suzano,arterial,241,2.55,2.38,7.4,3,0,1,0,0,1,33,67,65.8,0
+T0052,Av. Antônio Marques Figueira,Vila Figueira,arterial,170,2.33,2.29,4.9,0,0,0,0,0,1,13,160,97.8,0
+T0053,Av. Antônio Marques Figueira,Vila Figueira,arterial,236,1.89,1.69,7.3,0,0,1,0,0,0,10,105,86.4,0
+T0054,Rua Baruel,Vila Figueira,local,100,1.45,1.12,8.0,0,0,2,0,1,1,16,54,68.9,0
+T0055,Av. Antônio Marques Figueira,Vila Figueira,arterial,175,2.42,1.88,2.4,2,0,4,0,1,1,11,260,79.8,0
+T0056,Rua Sete de Setembro,Parque Suzano,coletora,68,1.82,1.8,,3,0,0,0,0,0,34,120,66.6,0
+T0057,Rua Professor Roberto David,Vila Figueira,local,110,1.89,1.61,11.1,0,0,2,0,0,0,14,40,80.9,1
+T0058,Av. Antônio Marques Figueira,Vila Figueira,arterial,180,1.93,1.65,4.5,3,0,1,0,1,1,27,70,64.5,1
+T0059,Rua Prudente de Moraes,Centro,coletora,82,1.85,1.52,11.6,2,0,2,0,0,1,33,131,67.8,1
+T0060,Rua Rui Barbosa,Vila Costa,local,64,1.4,0.79,0.8,2,0,4,0,0,0,30,54,35.2,1
+T0061,Rua Baruel,Vila Figueira,local,213,1.11,0.86,3.7,1,0,1,0,0,1,18,55,49.5,1
+T0062,Rua Benjamin Constant,Centro,local,65,0.9,0.71,6.2,0,1,0,0,1,0,8,207,46.2,1
+T0063,Rua Baruel,Vila Figueira,local,114,1.3,0.62,3.7,0,0,5,0,0,0,4,89,41.5,1
+T0064,Rua Marechal Deodoro,Centro,coletora,103,1.69,1.56,3.6,1,0,1,0,0,1,21,291,89.4,0
+T0065,Rua Nove de Julho,Jardim Santa Helena,local,181,1.8,1.33,3.5,0,0,1,0,0,0,9,85,81.3,0
+T0066,Rua Missionária Sara Cooper,Jardim Santa Helena,local,99,2.01,1.81,3.9,2,0,1,0,1,0,26,84,71.6,0
+T0067,Rua Prudente de Moraes,Centro,coletora,157,1.94,0.59,0.1,1,1,7,1,0,1,26,421,32.0,1
+T0068,Rua Benjamin Constant,Centro,local,243,1.62,0.94,2.6,1,0,2,1,0,0,12,146,45.1,1
+T0069,Av. Paulo Portela,Jardim Paulista,arterial,146,2.58,2.44,6.9,0,0,1,0,0,0,13,105,85.3,0
+T0070,Rua Benjamin Constant,Centro,local,180,1.55,1.4,4.1,3,0,0,0,1,0,34,338,71.6,0
+T0071,Rua Professor Roberto David,Vila Figueira,local,120,1.46,0.4,7.9,0,0,6,1,1,0,6,139,32.1,1
+T0072,Av. Antônio Marques Figueira,Vila Figueira,arterial,117,2.52,2.26,6.7,1,1,0,0,0,0,10,57,80.7,0
+T0073,Av. Paulo Portela,Jardim Paulista,arterial,95,2.84,1.94,5.3,2,0,2,1,1,1,28,67,70.9,0
+T0074,Rua Missionária Sara Cooper,Jardim Santa Helena,local,237,1.15,1.14,2.0,1,0,0,0,0,1,31,79,66.4,1
+T0075,Rua Tiradentes,Vila Costa,local,191,2.07,1.93,4.4,2,0,1,0,1,0,33,116,81.0,0
+T0076,Av. Armando Salles de Oliveira,Parque Suzano,arterial,217,2.75,2.03,4.7,2,0,2,1,0,0,28,141,63.4,0
+T0077,Rua Felício de Camargo,Centro,coletora,177,2.09,1.86,5.9,1,1,1,0,0,0,21,190,63.0,1
+T0078,Rua Nove de Julho,Jardim Santa Helena,local,245,0.9,0.4,4.9,3,0,6,1,0,0,34,171,1.1,1
+T0079,Rua Prudente de Moraes,Centro,coletora,102,2.0,1.28,4.9,0,0,2,1,0,0,2,275,68.6,0
+T0080,Rua General Francisco Glicério,Centro,local,197,1.01,0.62,0.8,1,0,3,0,1,0,29,143,50.7,0
+T0081,Rua General Francisco Glicério,Centro,local,232,1.47,0.4,9.5,0,0,7,1,1,0,9,320,17.2,1
+T0082,Rua Sete de Setembro,Parque Suzano,coletora,61,2.19,1.82,0.2,2,0,3,0,0,0,24,35,81.1,0
+T0083,Rua Baruel,Vila Figueira,local,167,1.54,1.19,,1,0,2,0,1,0,25,77,62.3,1
+T0084,Rua Marechal Deodoro,Centro,coletora,155,1.65,0.73,9.8,0,0,4,1,0,1,23,77,40.5,1
+T0085,Rua Prudente de Moraes,Centro,coletora,225,1.98,0.98,3.7,1,0,4,1,0,0,19,216,52.5,0
+T0086,Av. Armando Salles de Oliveira,Parque Suzano,arterial,124,2.73,2.67,2.3,1,0,0,0,1,1,8,139,94.5,0
+T0087,Rua Baruel,Vila Figueira,local,95,0.9,0.83,7.6,3,0,0,0,0,0,33,117,45.7,1
+T0088,Av. Armando Salles de Oliveira,Parque Suzano,arterial,200,2.47,2.07,9.4,0,0,3,0,0,1,5,26,76.0,0
+T0089,Rua Professor Roberto David,Vila Figueira,local,191,1.34,1.22,7.3,1,0,0,0,0,1,3,96,69.8,0
+T0090,Rua Nove de Julho,Jardim Santa Helena,local,43,1.66,0.95,7.6,0,1,2,1,0,0,16,114,43.9,1
+T0091,Rua Nove de Julho,Jardim Santa Helena,local,119,1.36,1.21,2.5,2,1,0,0,1,0,27,123,60.7,1
+T0092,Rua Felício de Camargo,Centro,coletora,193,2.22,1.77,4.9,1,0,3,0,0,0,15,281,62.6,0
+T0093,Rua Nove de Julho,Jardim Santa Helena,local,216,1.44,0.65,4.2,2,0,3,1,1,0,34,123,36.8,1
+T0094,Rua Rui Barbosa,Vila Costa,local,227,1.66,1.34,3.2,1,0,1,0,0,0,12,41,74.0,0
+T0095,Av. Armando Salles de Oliveira,Parque Suzano,arterial,70,3.27,3.11,4.8,0,0,0,0,0,0,21,80,83.1,0
+T0096,Av. Armando Salles de Oliveira,Parque Suzano,arterial,232,3.07,2.41,6.4,1,0,1,1,1,0,16,60,78.4,0
+T0097,Rua Professor Roberto David,Vila Figueira,local,153,1.78,1.78,3.7,0,0,0,0,0,0,6,80,92.2,0
+T0098,Rua Nove de Julho,Jardim Santa Helena,local,112,1.84,0.99,1.6,1,0,6,0,1,0,14,93,62.1,1
+T0099,Rua General Francisco Glicério,Centro,local,171,1.19,0.4,2.1,3,0,5,1,0,1,34,133,20.5,1
+T0100,Av. Armando Salles de Oliveira,Parque Suzano,arterial,87,2.37,2.06,3.8,1,0,2,0,0,1,8,65,80.8,0
+T0101,Rua Rui Barbosa,Vila Costa,local,224,1.15,0.91,0.6,0,0,1,0,0,0,6,109,62.6,0
+T0102,Rua Marechal Deodoro,Centro,coletora,209,1.76,0.89,6.0,2,0,2,1,0,1,25,154,53.0,1
+T0103,Av. Armando Salles de Oliveira,Parque Suzano,arterial,96,3.04,3.01,4.2,0,0,0,0,0,0,20,67,83.7,0
+T0104,Av. Antônio Marques Figueira,Vila Figueira,arterial,204,2.18,1.94,6.4,1,1,0,0,1,0,10,85,70.9,0
+T0105,Av. Paulo Portela,Jardim Paulista,arterial,107,2.64,2.28,5.1,2,0,2,0,1,1,27,157,79.2,0
+T0106,Rua Prudente de Moraes,Centro,coletora,139,1.63,0.4,1.5,1,1,7,1,0,1,17,172,12.0,1
+T0107,Av. Armando Salles de Oliveira,Parque Suzano,arterial,228,2.24,1.46,5.7,3,0,3,1,0,1,16,38,57.7,1
+T0108,Rua Tiradentes,Vila Costa,local,197,1.76,1.35,6.8,3,1,3,0,1,0,29,52,47.5,1
+T0109,Av. Armando Salles de Oliveira,Parque Suzano,arterial,221,2.39,1.04,7.0,0,0,6,1,0,0,35,88,53.5,1
+T0110,Rua Benjamin Constant,Centro,local,189,1.29,0.4,7.2,0,0,5,1,1,0,5,87,32.6,1
+T0111,Av. Armando Salles de Oliveira,Parque Suzano,arterial,104,3.19,2.96,6.0,0,0,1,0,0,0,4,54,86.8,0
+T0112,Rua Benjamin Constant,Centro,local,51,1.52,0.92,10.8,2,1,3,0,0,0,31,132,16.4,1
+T0113,Rua Sete de Setembro,Parque Suzano,coletora,218,1.89,1.69,7.1,0,0,0,0,1,1,9,215,94.8,0
+T0114,Rua Marechal Deodoro,Centro,coletora,228,1.63,1.17,3.8,2,0,3,0,0,1,34,298,64.6,1
+T0115,Rua General Francisco Glicério,Centro,local,131,1.42,1.36,3.3,0,0,0,0,1,0,5,136,88.2,1
+T0116,Rua Prudente de Moraes,Centro,coletora,109,1.79,1.66,2.1,0,1,1,0,1,1,21,128,80.4,0
+T0117,Rua Marechal Deodoro,Centro,coletora,59,1.72,1.42,3.3,2,0,1,0,1,1,24,109,73.1,0
+T0118,Rua Professor Roberto David,Vila Figueira,local,45,1.83,1.45,8.6,1,0,3,0,1,0,20,85,72.1,0
+T0119,Rua General Francisco Glicério,Centro,local,216,1.2,0.4,5.0,1,0,4,1,1,0,10,195,26.9,1
+T0120,Rua Baruel,Vila Figueira,local,190,0.9,0.66,6.0,0,0,2,0,1,0,12,40,59.4,1
+T0121,Av. Armando Salles de Oliveira,Parque Suzano,arterial,239,2.4,2.36,2.2,1,0,0,0,0,0,30,97,77.2,0
+T0122,Rua Tiradentes,Vila Costa,local,223,1.73,1.59,,0,0,0,0,0,0,2,140,79.9,0
+T0123,Rua Benjamin Constant,Centro,local,89,1.84,1.49,6.0,1,0,2,0,1,0,4,260,73.2,1
+T0124,Rua Benjamin Constant,Centro,local,195,1.61,1.39,5.9,2,0,1,0,1,0,23,203,74.1,0
+T0125,Rua Benjamin Constant,Centro,local,133,1.93,1.72,6.8,1,0,0,0,0,1,14,400,85.2,0
+T0126,Rua Marechal Deodoro,Centro,coletora,247,1.39,0.4,1.6,0,0,7,1,0,0,2,236,36.6,1
+T0127,Rua Sete de Setembro,Parque Suzano,coletora,69,2.28,2.09,,1,0,1,0,0,0,26,93,84.2,0
+T0128,Rua Rui Barbosa,Vila Costa,local,198,1.46,1.1,4.2,0,0,0,0,0,0,35,119,75.1,1
+T0129,Rua Baruel,Vila Figueira,local,126,1.4,1.28,3.9,1,0,1,0,0,0,7,41,71.2,1
+T0130,Rua Professor Roberto David,Vila Figueira,local,123,0.9,0.4,3.3,0,1,3,0,1,1,5,174,39.0,1
+T0131,Rua Missionária Sara Cooper,Jardim Santa Helena,local,238,1.67,1.25,4.3,3,0,0,1,0,0,35,89,53.9,0
+T0132,Rua Sete de Setembro,Parque Suzano,coletora,150,1.97,1.72,2.5,3,1,1,0,0,0,28,79,56.9,1
+T0133,Av. Paulo Portela,Jardim Paulista,arterial,135,3.07,2.48,2.6,0,0,1,1,1,0,5,116,88.9,0
+T0134,Rua Tiradentes,Vila Costa,local,50,1.56,0.82,4.6,0,0,5,0,0,0,2,48,58.9,1
+T0135,Rua Felício de Camargo,Centro,coletora,85,1.71,1.07,1.1,1,0,2,1,0,0,4,132,58.1,0
+T0136,Av. Armando Salles de Oliveira,Parque Suzano,arterial,213,2.36,1.35,5.4,2,0,5,1,1,1,33,101,64.9,1
+T0137,Rua Sete de Setembro,Parque Suzano,coletora,120,2.02,1.27,2.9,1,0,2,1,0,0,8,106,78.9,1
+T0138,Rua Tiradentes,Vila Costa,local,127,1.59,1.27,2.6,0,0,1,0,0,0,2,42,69.1,0
+T0139,Rua Benjamin Constant,Centro,local,91,1.31,0.4,7.1,1,0,4,1,0,1,15,185,31.0,1
+T0140,Rua Sete de Setembro,Parque Suzano,coletora,130,1.58,0.99,4.7,0,0,4,0,0,0,16,52,56.1,1
+T0141,Av. Armando Salles de Oliveira,Parque Suzano,arterial,124,3.05,2.81,1.5,0,0,2,0,0,0,7,67,94.9,0
+T0142,Av. Antônio Marques Figueira,Vila Figueira,arterial,176,2.33,2.17,5.3,0,0,1,0,1,1,5,49,81.2,0
+T0143,Rua Marechal Deodoro,Centro,coletora,58,1.68,1.43,7.3,0,0,2,0,1,1,21,294,88.4,0
+T0144,Rua Benjamin Constant,Centro,local,118,1.34,0.91,4.7,0,0,3,0,1,0,18,222,58.4,0
+T0145,Rua Missionária Sara Cooper,Jardim Santa Helena,local,179,1.82,1.63,2.9,2,0,1,0,0,0,33,49,72.9,0
+T0146,Rua Felício de Camargo,Centro,coletora,165,2.33,2.14,8.3,1,1,0,0,0,1,29,246,70.0,0
+T0147,Rua Marechal Deodoro,Centro,coletora,68,1.39,1.1,2.7,0,0,2,0,1,0,23,200,80.3,0
+T0148,Rua Benjamin Constant,Centro,local,223,1.48,1.07,10.3,2,0,2,0,0,0,12,195,49.1,1
+T0149,Rua Marechal Deodoro,Centro,coletora,103,1.42,1.06,1.0,1,0,3,0,0,0,21,99,65.5,1
+T0150,Rua General Francisco Glicério,Centro,local,102,1.86,1.42,3.8,0,0,3,0,0,0,11,114,77.2,0
+T0151,Rua Nove de Julho,Jardim Santa Helena,local,231,1.63,0.59,7.2,0,0,5,1,1,0,17,71,41.2,1
+T0152,Rua Benjamin Constant,Centro,local,166,1.42,0.4,4.5,1,1,4,1,0,0,19,126,13.5,1
+T0153,Av. Armando Salles de Oliveira,Parque Suzano,arterial,210,2.5,2.16,2.4,2,0,2,0,1,1,25,65,87.9,0
+T0154,Rua General Francisco Glicério,Centro,local,91,1.46,0.55,8.6,1,1,3,1,0,1,28,260,25.7,1
+T0155,Rua Sete de Setembro,Parque Suzano,coletora,126,1.83,1.61,0.1,1,0,1,0,0,0,23,115,82.4,0
+T0156,Rua Marechal Deodoro,Centro,coletora,169,2.16,1.6,5.2,2,0,1,1,1,0,24,186,76.4,0
+T0157,Rua Rui Barbosa,Vila Costa,local,156,1.12,0.61,10.8,3,1,4,0,0,0,33,67,2.9,1
+T0158,Av. Antônio Marques Figueira,Vila Figueira,arterial,233,2.03,1.94,5.6,2,0,0,0,0,0,27,33,74.2,0
+T0159,Rua Felício de Camargo,Centro,coletora,206,2.42,1.45,2.8,0,1,4,1,0,0,13,190,72.7,1
+T0160,Av. Paulo Portela,Jardim Paulista,arterial,123,2.37,2.12,8.3,0,0,1,0,1,0,28,64,91.5,0
+T0161,Rua Professor Roberto David,Vila Figueira,local,101,1.93,1.69,4.1,2,1,1,0,1,0,29,66,61.9,0
+T0162,Av. Antônio Marques Figueira,Vila Figueira,arterial,45,2.66,2.47,2.5,1,0,1,0,0,1,30,108,89.5,0
+T0163,Rua General Francisco Glicério,Centro,local,207,0.9,0.4,6.6,1,0,5,1,1,1,15,103,34.6,1
+T0164,Rua Rui Barbosa,Vila Costa,local,87,1.22,1.14,3.3,1,1,0,0,0,0,20,113,58.1,1
+T0165,Rua Benjamin Constant,Centro,local,94,1.51,0.66,1.9,0,0,2,1,1,0,4,119,58.6,0
+T0166,Rua Prudente de Moraes,centro ,coletora,153,1.93,1.74,1.6,2,0,1,0,0,1,21,97,85.2,0
+T0167,Rua Missionária Sara Cooper,Jardim Santa Helena,local,60,1.49,1.14,1.8,1,0,2,0,0,0,24,51,64.2,1
+T0168,Rua Prudente de Moraes,Centro,coletora,115,1.82,0.99,2.6,1,0,3,1,0,0,25,115,62.0,0
+T0169,Rua Marechal Deodoro,Centro,coletora,185,1.67,1.51,4.6,1,0,1,0,1,0,19,187,83.7,0
+T0170,Av. Antônio Marques Figueira,Vila Figueira,arterial,153,2.7,2.43,2.4,3,1,2,0,1,0,21,196,61.6,0
+T0171,Rua Felício de Camargo,Centro,coletora,82,2.4,1.97,3.1,1,0,3,0,0,0,13,450,74.6,0
+T0172,Rua Benjamin Constant,Centro,local,174,1.26,0.47,2.0,1,0,3,1,1,0,13,170,41.3,1
+T0173,Rua Professor Roberto David,Vila Figueira,local,116,1.43,1.1,5.2,0,0,1,0,0,0,4,73,69.5,0
+T0174,Rua Missionária Sara Cooper,Jardim Santa Helena,local,69,1.36,1.16,7.2,2,0,1,0,0,0,13,152,53.9,1
+T0175,Rua Nove de Julho,Jardim Santa Helena,local,223,1.1,1.04,6.2,0,0,0,0,0,0,19,131,58.1,0
+T0176,Rua Prudente de Moraes,Centro,coletora,91,2.28,1.61,2.6,0,0,1,1,1,0,2,131,94.2,0
+T0177,Rua Tiradentes,Vila Costa,local,64,1.67,1.62,3.1,2,0,0,0,0,0,34,105,70.9,0
+T0178,Rua Felício de Camargo,Centro,coletora,155,2.16,1.21,2.2,2,0,4,1,1,1,33,231,62.4,1
+T0179,Rua Rui Barbosa,Vila Costa,local,205,1.37,1.06,2.7,0,0,2,0,0,0,10,140,72.0,1
+T0180,Rua General Francisco Glicério,Centro,local,70,1.56,1.31,7.4,0,1,2,0,0,1,19,714,61.2,1
+T0181,Rua Sete de Setembro,Parque Suzano,coletora,175,2.19,2.07,4.8,0,0,0,0,1,0,13,76,88.3,0
+T0182,Rua Sete de Setembro,Parque Suzano,coletora,192,2.25,2.14,1.8,0,0,0,0,1,0,4,116,100.0,0
+T0183,Rua Tiradentes,Vila Costa,local,198,1.45,1.12,3.1,0,0,1,0,0,0,21,84,66.4,0
+T0184,Rua Missionária Sara Cooper,Jardim Santa Helena,local,148,1.5,0.69,1.1,2,0,3,1,1,0,32,89,43.8,1
+T0185,Rua General Francisco Glicério,Centro,local,145,1.18,0.4,,1,0,4,1,0,0,14,133,25.0,1
+T0186,Av. Armando Salles de Oliveira,Parque Suzano,arterial,176,2.5,1.78,3.8,1,0,2,1,1,0,24,69,81.0,0
+T0187,Av. Paulo Portela,Jardim Paulista,arterial,55,2.79,2.41,5.0,0,0,3,0,1,1,8,104,87.4,0
+T0188,Rua Prudente de Moraes,Centro,coletora,73,2.02,1.84,3.8,3,1,1,0,0,1,35,132,54.4,1
+T0189,Rua Sete de Setembro,Parque Suzano,coletora,205,1.85,1.37,4.7,3,0,3,0,0,0,26,98,61.0,1
+T0190,Rua Benjamin Constant,Centro,local,237,1.68,1.06,7.3,0,0,1,1,1,0,7,230,71.8,0
+T0191,Rua Felício de Camargo,Centro,coletora,83,2.2,,3.1,0,0,0,0,1,1,23,181,94.3,0
+T0192,Rua Professor Roberto David,Vila Figueira,local,246,1.27,1.15,2.7,2,0,0,0,1,0,15,224,70.7,0
+T0193,Av. Antônio Marques Figueira,Vila Figueira,arterial,85,2.21,2.03,3.1,1,0,0,0,1,0,31,132,90.8,0
+T0194,Rua Professor Roberto David,Vila Figueira,local,178,1.71,1.3,2.6,1,0,2,0,0,1,10,120,82.1,0
+T0195,Av. Armando Salles de Oliveira,Parque Suzano,arterial,132,2.76,1.49,4.0,1,0,7,1,1,0,28,139,80.9,1
+T0196,Rua Baruel,Vila Figueira,local,117,1.14,0.76,4.2,1,0,3,0,0,0,14,87,48.2,1
+T0197,Rua Nove de Julho,Jardim Santa Helena,local,220,1.86,1.47,1.3,2,0,2,0,1,0,28,68,80.6,1
+T0198,Rua Felício de Camargo,Centro,coletora,191,1.97,1.05,3.0,0,1,3,1,1,1,9,268,57.4,0
+T0199,Rua General Francisco Glicério,Centro,local,103,0.9,0.75,2.0,1,0,1,0,0,0,3,235,57.3,1
+T0200,Rua Benjamin Constant,Centro,local,109,1.26,0.79,7.0,0,0,0,1,1,0,7,293,58.9,1
+T0201,Av. Paulo Portela,Jardim Paulista,arterial,190,2.06,0.73,9.2,0,0,7,1,1,1,8,90,42.4,1
+T0202,Av. Armando Salles de Oliveira,Parque Suzano,arterial,178,2.94,2.8,3.0,1,0,1,0,1,1,23,73,86.4,0
+T0203,Rua Felício de Camargo,Centro,coletora,202,2.15,2.07,1.1,1,0,0,0,1,0,16,160,89.1,0
+T0204,Av. Paulo Portela,Jardim Paulista,arterial,129,2.54,1.99,7.9,0,0,4,0,1,0,5,46,72.0,0
+T0205,Av. Paulo Portela,Jardim Paulista,arterial,127,1.8,1.67,4.5,1,0,0,0,1,1,26,46,76.2,0
+T0206,Av. Paulo Portela,Jardim Paulista,arterial,175,2.06,1.89,7.8,1,0,1,0,0,1,13,150,75.0,1
+T0207,Rua Prudente de Moraes,Centro,coletora,85,1.95,1.3,2.9,2,0,2,1,1,1,35,205,65.9,1
+T0208,Rua Felício de Camargo,Centro,coletora,230,1.47,1.17,4.0,1,1,2,0,0,1,17,229,58.8,1
+T0209,Rua Nove de Julho,Jardim Santa Helena,local,147,1.78,1.39,2.7,3,0,2,0,1,0,34,57,68.6,0
+T0210,Rua Tiradentes,Vila Costa,local,94,1.47,1.26,5.7,2,0,1,0,0,0,35,61,57.6,0
+T0211,Rua Felício de Camargo,Centro,coletora,163,1.96,1.19,8.8,1,0,3,1,1,1,22,254,60.2,1
+T0212,Rua Professor Roberto David,Vila Figueira,local,151,1.48,1.26,2.7,2,0,1,0,0,0,21,89,63.1,1
+T0213,Rua General Francisco Glicério,Centro,local,118,1.01,0.97,0.7,0,0,0,0,0,0,17,412,78.6,0
+T0214,Av. Antônio Marques Figueira,Vila Figueira,arterial,106,2.09,1.05,8.9,0,1,4,1,0,0,11,27,43.0,1
+T0215,Rua Prudente de Moraes,Centro,coletora,150,1.43,1.19,5.1,2,0,1,0,1,0,13,213,64.2,1
+T0216,Rua General Francisco Glicério,Centro,local,230,1.31,0.4,2.8,0,1,6,1,0,0,11,234,26.8,1
+T0217,Rua General Francisco Glicério,Centro,local,40,1.42,1.19,3.7,3,0,1,0,1,0,35,154,66.4,1
+T0218,Rua Nove de Julho,Jardim Santa Helena,local,240,1.43,1.28,1.8,3,0,1,0,1,0,30,110,70.5,1
+T0219,Av. Armando Salles de Oliveira,Parque Suzano,arterial,248,2.52,1.79,0.9,1,0,2,1,1,1,6,67,88.9,0
+T0220,Rua Felício de Camargo,Centro,coletora,108,1.72,0.84,7.8,2,0,2,1,1,1,28,201,44.6,1
+T0221,Av. Antônio Marques Figueira,Vila Figueira,arterial,150,2.48,2.16,5.7,1,0,2,0,1,0,23,195,79.0,0
+T0222,Rua Baruel,Vila Figueira,local,194,0.9,0.79,10.5,1,0,0,0,0,1,20,47,46.2,1
+T0223,Av. Armando Salles de Oliveira,Parque Suzano,arterial,125,2.27,2.11,,2,0,1,0,1,0,12,102,83.6,0
+T0224,Rua Professor Roberto David,Vila Figueira,local,90,1.3,1.13,10.8,0,0,1,0,1,1,24,62,67.3,0
+T0225,Av. Antônio Marques Figueira,Vila Figueira,arterial,216,2.25,1.85,4.6,2,0,1,0,1,0,21,44,77.7,0
+T0226,Rua Benjamin Constant,Centro,local,146,1.57,1.51,2.4,1,0,0,0,0,0,19,245,85.2,0
+T0227,Rua Professor Roberto David,Vila Figueira,local,97,1.44,1.02,4.0,2,0,3,0,0,0,16,25,55.7,1
+T0228,Rua Missionária Sara Cooper,Jardim Santa Helena,local,180,1.45,1.3,3.1,3,0,1,0,0,0,35,96,59.6,1
+T0229,Rua Professor Roberto David,Vila Figueira,local,77,1.87,1.55,4.8,2,0,2,0,1,0,28,37,80.1,0
+T0230,Rua Tiradentes,Vila Costa,local,192,1.91,0.86,2.2,3,1,5,1,1,0,35,75,31.8,1
+T0231,Rua Prudente de Moraes,Centro,coletora,121,2.19,1.5,2.8,0,0,2,1,1,0,7,133,80.9,1
+T0232,Rua Felício de Camargo,Centro,coletora,237,2.37,1.4,1.3,3,0,4,1,1,0,32,300,64.3,1
+T0233,Rua Tiradentes,Vila Costa,local,99,2.02,1.63,3.1,0,0,2,0,0,0,2,84,84.5,0
+T0234,Rua Professor Roberto David,Vila Figueira,local,146,1.61,,5.5,2,0,2,0,1,0,23,95,63.7,1
+T0235,Rua Baruel,Vila Figueira,local,194,0.9,0.47,4.0,3,0,3,0,0,1,26,39,14.0,1
+T0236,Rua Benjamin Constant,Centro,local,133,1.8,1.04,3.9,0,0,2,1,0,0,5,349,70.2,0
+T0237,Rua General Francisco Glicério,Centro,local,121,1.0,0.4,2.0,0,0,3,1,0,0,21,135,40.8,1
+T0238,Rua Sete de Setembro,Parque Suzano,coletora,176,2.46,2.31,1.5,1,0,1,0,0,1,22,151,87.7,0
+T0239,Rua Benjamin Constant,Centro,local,184,2.02,0.92,0.8,1,1,5,1,1,0,15,118,47.4,1
+T0240,Av. Antônio Marques Figueira,Vila Figueira,arterial,131,2.24,2.21,4.9,1,0,0,0,1,1,25,138,91.5,0
+T0241,Av. Paulo Portela,Jardim Paulista,arterial,185,2.17,1.86,11.1,0,0,2,0,1,1,7,122,82.3,0
+T0242,Rua Nove de Julho,Jardim Santa Helena,local,236,1.29,1.17,8.2,1,0,0,0,1,0,15,139,61.0,0
+T0243,Rua Missionária Sara Cooper,Jardim Santa Helena,local,134,1.38,1.28,11.6,0,0,0,0,1,1,9,48,73.8,1
+T0244,Rua Baruel,Vila Figueira,local,210,1.58,0.96,7.0,2,0,5,0,0,1,25,65,31.9,1
+T0245,Rua Marechal Deodoro,Centro,coletora,102,1.33,1.2,1.7,1,0,1,0,0,0,33,198,61.7,0
+T0246,Rua Prudente de Moraes,Centro,coletora,137,2.26,1.69,5.0,0,0,1,1,0,1,3,273,82.4,0
+T0247,Rua Baruel,Vila Figueira,local,207,0.9,0.41,6.4,1,0,4,0,0,0,15,207,32.3,1
+T0248,Rua Prudente de Moraes,Centro,coletora,165,2.36,2.15,1.9,0,0,1,0,0,0,14,178,84.9,0
+T0249,Rua Marechal Deodoro,Centro,coletora,69,1.68,1.54,1.6,1,0,1,0,1,0,19,193,85.9,0
+T0250,Rua General Francisco Glicério,Centro,local,77,1.36,1.16,0.7,0,0,0,0,1,1,3,164,89.2,1
+T0251,Rua Missionária Sara Cooper,Jardim Santa Helena,local,42,1.37,1.2,1.5,0,0,1,0,0,0,6,143,84.2,0
+T0252,Rua Felício de Camargo,Centro,coletora,168,2.28,1.94,1.6,1,0,2,0,0,0,20,142,86.3,0
+T0253,Rua Marechal Deodoro,Centro,coletora,41,1.81,1.01,4.2,0,0,2,1,0,0,2,136,64.5,0
+T0254,Rua Nove de Julho,Jardim Santa Helena,local,235,2.01,1.58,2.2,0,0,2,0,0,0,8,113,88.3,0
+T0255,Av. Armando Salles de Oliveira,Parque Suzano,arterial,244,2.07,1.19,3.4,1,0,3,1,1,0,35,69,63.7,0
+T0256,Av. Paulo Portela,Jardim Paulista,arterial,202,2.23,2.22,5.8,0,0,0,0,1,1,6,201,97.1,0
+T0257,Rua Benjamin Constant,Centro,local,63,1.1,1.02,4.6,0,0,0,0,1,1,2,204,89.7,0
+T0258,Rua Nove de Julho,Jardim Santa Helena,local,160,1.72,1.18,1.3,1,0,3,0,0,0,29,28,65.3,1
+T0259,Rua Missionária Sara Cooper,Jardim Santa Helena,local,226,0.9,0.53,1.5,0,0,3,0,0,0,25,64,53.1,0
+T0260,Rua Professor Roberto David,Vila Figueira,local,238,2.23,2.12,4.1,1,0,0,0,1,0,29,34,88.2,0
+T0261,Rua Missionária Sara Cooper,Jardim Santa Helena,local,103,1.43,1.22,,2,0,1,0,0,0,21,73,49.5,0
+T0262,Rua Baruel,Vila Figueira,local,171,1.57,1.54,4.4,1,0,0,0,0,0,29,66,78.7,0
+T0263,Av. Antônio Marques Figueira,Vila Figueira,arterial,109,2.11,1.94,15.0,0,0,1,0,1,1,15,70,71.9,0
+T0264,Rua Rui Barbosa,Vila Costa,local,209,1.46,1.31,4.2,2,0,1,0,0,0,22,36,67.8,1
+T0265,Av. Armando Salles de Oliveira,Parque Suzano,arterial,153,2.79,2.63,2.3,1,0,0,0,1,1,28,100,85.9,0
+T0266,Rua Felício de Camargo,Centro,coletora,235,1.79,1.1,2.2,0,0,2,1,0,0,12,111,71.6,0
+T0267,Rua Baruel,Vila Figueira,local,146,1.13,0.72,6.2,0,0,3,0,0,0,21,215,47.2,1
+T0268,Rua Prudente de Moraes,Centro,coletora,84,2.47,2.23,1.0,0,0,1,0,0,0,2,393,91.1,0
+T0269,Rua Tiradentes,Vila Costa,local,143,1.88,1.36,9.4,1,1,3,0,0,0,15,39,58.6,0
+T0270,Rua Professor Roberto David,Vila Figueira,local,199,1.67,1.11,8.3,0,0,3,0,0,0,9,90,72.4,1
+T0271,Rua Prudente de Moraes,Centro,coletora,51,2.59,1.74,3.8,3,0,3,1,1,0,35,174,60.0,0
+T0272,Rua Nove de Julho,Jardim Santa Helena,local,167,0.92,,2.0,2,0,1,0,1,0,34,117,45.4,1
+T0273,Rua Missionária Sara Cooper,Jardim Santa Helena,local,168,1.49,1.11,7.4,2,0,3,0,0,0,33,80,49.2,1
+T0274,Av. Paulo Portela,Jardim Paulista,arterial,228,2.39,2.07,3.1,0,0,2,0,0,0,17,91,93.9,0
+T0275,Av. Antônio Marques Figueira,Vila Figueira,arterial,129,2.83,2.81,5.8,1,1,0,0,0,0,21,47,63.1,0
+T0276,Av. Armando Salles de Oliveira,Parque Suzano,arterial,225,2.93,2.65,6.3,0,0,1,0,0,1,25,39,89.5,0
+T0277,Rua Prudente de Moraes,Centro,coletora,186,2.35,2.06,18.0,0,0,2,0,0,1,10,79,64.4,0
+T0278,Rua Marechal Deodoro,Centro,coletora,228,1.52,0.4,12.5,0,0,6,1,0,0,22,302,10.9,1
+T0279,Rua Benjamin Constant,Centro,local,122,1.67,0.4,0.8,2,0,7,1,0,0,32,237,23.1,1
+T0280,Av. Antônio Marques Figueira,Vila Figueira,arterial,40,2.72,2.49,2.3,3,0,1,0,1,1,30,102,69.0,0
+T0281,Av. Paulo Portela,Jardim Paulista,arterial,45,2.89,2.87,3.6,1,0,0,0,0,0,17,73,77.2,0
+T0282,Rua Felício de Camargo,Centro,coletora,74,1.72,0.93,4.0,1,0,3,1,0,0,23,210,51.7,1
+T0283,Rua Marechal Deodoro,Centro,coletora,205,1.5,1.25,3.1,1,1,2,0,1,0,26,128,59.1,1
+T0284,Rua Sete de Setembro,Parque Suzano,coletora,200,1.97,1.64,9.0,1,0,2,0,0,0,25,101,71.9,0
+T0285,Rua Tiradentes,Vila Costa,local,233,1.92,1.76,4.5,0,0,1,0,0,0,26,47,86.3,0
+T0286,Rua Tiradentes,Vila Costa,local,58,1.69,1.53,2.0,1,0,0,0,1,0,18,66,91.5,0
+T0287,Av. Paulo Portela,Jardim Paulista,arterial,222,2.91,2.88,15.0,1,0,0,0,0,1,11,71,67.6,0
+T0288,Rua Missionária Sara Cooper,Jardim Santa Helena,local,214,0.9,0.89,10.5,0,0,0,0,0,0,2,62,65.2,0
+T0289,Rua Baruel,Vila Figueira,local,221,1.12,0.57,5.9,1,0,4,0,0,0,18,51,41.7,1
+T0290,Av. Paulo Portela,Jardim Paulista,arterial,43,2.65,2.49,3.0,2,0,1,0,1,0,22,91,81.2,0
+T0291,Av. Antônio Marques Figueira,Vila Figueira,arterial,217,2.48,1.83,7.4,0,0,1,1,0,0,13,82,80.7,0
+T0292,Rua Benjamin Constant,Centro,local,142,0.93,0.4,1.9,1,0,3,1,0,0,23,191,33.4,1
+T0293,Rua Nove de Julho,Jardim Santa Helena,local,222,1.83,1.53,5.6,0,0,2,0,1,0,2,81,86.8,0
+T0294,Av. Antônio Marques Figueira,Vila Figueira,arterial,210,2.5,2.05,7.3,1,0,3,0,0,0,31,86,73.2,0
+T0295,Av. Paulo Portela,Jardim Paulista,arterial,222,2.36,1.95,2.1,2,0,2,0,1,0,30,66,81.7,0
+T0296,Rua Baruel,Vila Figueira,local,224,1.56,1.42,4.2,0,1,1,0,1,0,24,31,73.8,0
+T0297,Rua Marechal Deodoro,Centro,coletora,88,1.18,0.4,2.9,1,0,5,1,0,1,13,224,27.8,1
+T0298,Rua Marechal Deodoro,Centro,coletora,123,1.55,1.39,6.6,1,0,1,0,1,1,20,77,82.2,0
+T0299,Rua Baruel,Vila Figueira,local,230,1.47,1.0,3.5,0,0,3,0,0,0,17,109,62.0,0
+T0300,Rua Sete de Setembro,Parque Suzano,coletora,247,2.01,1.87,5.4,1,0,1,0,0,0,21,88,74.0,0
+T0301,Av. Paulo Portela,Jardim Paulista,arterial,139,2.43,1.99,7.1,1,0,3,0,0,0,34,48,67.5,0
+T0302,Rua Benjamin Constant,Centro,local,166,1.45,0.74,4.3,1,0,2,1,0,0,19,130,45.2,1
+T0303,Rua Prudente de Moraes,Centro,coletora,131,1.93,1.12,1.6,1,0,3,1,1,0,27,163,64.6,1
+T0304,Rua Professor Roberto David,Vila Figueira,local,236,1.76,,5.8,3,0,0,0,1,0,28,121,67.0,1
+T0305,Rua Felício de Camargo,Centro,coletora,132,1.91,1.71,5.5,0,0,1,0,0,1,4,316,92.9,0
+T0306,Rua Benjamin Constant,Centro,local,118,1.7,1.57,2.9,2,0,1,0,0,0,25,462,62.7,0
+T0307,Rua Professor Roberto David,Vila Figueira,local,106,0.9,0.76,8.0,0,0,1,0,0,0,3,114,42.3,1
+T0308,Av. Antônio Marques Figueira,Vila Figueira,arterial,124,2.77,1.83,9.8,0,0,4,1,0,1,22,50,74.6,0
+T0309,Av. Antônio Marques Figueira,Vila Figueira,arterial,227,3.13,3.04,8.2,0,0,0,0,0,0,18,50,80.9,0
+T0310,Rua Prudente de Moraes,Centro,coletora,103,2.15,1.86,1.6,1,1,1,0,0,0,15,511,72.7,1
+T0311,Rua Felício de Camargo,Centro,coletora,241,1.97,1.2,2.2,0,0,3,1,0,0,7,394,74.6,1
+T0312,Rua Tiradentes,Vila Costa,local,185,1.34,1.12,0.3,0,0,1,0,0,0,27,90,73.2,0
+T0313,Rua Baruel,Vila Figueira,local,143,1.41,1.27,7.1,0,0,1,0,0,1,3,172,76.7,0
+T0314,Rua Tiradentes,Vila Costa,local,58,1.3,1.13,5.0,2,0,0,0,0,0,20,45,59.0,1
+T0315,Rua Tiradentes,Vila Costa,local,188,1.25,0.6,1.1,1,0,2,1,1,0,32,196,43.2,1
+T0316,Rua Felício de Camargo,Centro,coletora,128,1.36,0.97,6.9,0,0,2,0,0,0,10,255,55.1,0
+T0317,Av. Antônio Marques Figueira,Vila Figueira,arterial,113,2.47,2.15,6.1,1,0,2,0,1,0,26,101,80.2,0
+T0318,Rua Baruel,Vila Figueira,local,217,1.11,0.4,8.5,0,0,5,1,0,0,13,68,30.0,1
+T0319,Rua Marechal Deodoro,Centro,coletora,112,1.63,0.88,1.5,0,0,2,1,0,1,2,91,68.7,1
+T0320,Rua Marechal Deodoro,Centro,coletora,99,1.7,1.67,1.8,0,0,0,0,1,1,4,237,100.0,0
+T0321,Rua Tiradentes,Vila Costa,local,149,1.29,0.4,2.3,1,0,4,1,0,0,23,228,31.8,1
+T0322,Rua Rui Barbosa,Vila Costa,local,127,1.46,1.16,2.9,0,0,1,0,0,0,6,71,74.2,0
+T0323,Av. Antônio Marques Figueira,Vila Figueira,arterial,151,2.08,2.08,2.9,2,1,0,0,0,1,30,59,61.4,0
+T0324,Rua Sete de Setembro,Parque Suzano,coletora,125,1.87,1.85,5.4,3,0,0,0,0,0,32,69,61.4,0
+T0325,Rua Baruel,Vila Figueira,local,55,1.12,0.85,3.9,0,0,2,0,0,0,20,84,52.5,1
+T0326,Av. Paulo Portela,Jardim Paulista,arterial,65,1.99,1.15,4.8,1,0,3,1,1,1,28,49,70.9,0
+T0327,Rua Benjamin Constant,Centro,local,206,1.14,0.4,0.7,0,0,6,1,0,0,8,271,37.5,1
+T0328,Rua Baruel,Vila Figueira,local,90,1.02,0.65,10.9,1,0,2,0,0,0,9,56,27.3,1
+T0329,Rua Nove de Julho,Jardim Santa Helena,local,71,1.33,0.44,2.3,1,0,4,1,1,0,34,151,40.9,1
+T0330,Rua Rui Barbosa,Vila Costa,local,246,1.48,1.23,1.5,0,0,1,0,0,0,2,39,80.2,0
+T0331,Rua General Francisco Glicério,Centro,local,61,1.18,0.86,4.2,0,0,2,0,1,0,8,314,65.8,0
+T0332,Rua Tiradentes,Vila Costa,local,116,1.48,0.46,10.8,0,0,5,1,0,0,3,57,31.2,0
+T0333,Av. Antônio Marques Figueira,Vila Figueira,arterial,160,2.28,1.97,12.7,1,0,2,0,1,1,31,88,78.0,0
+T0334,Rua Sete de Setembro,Parque Suzano,coletora,76,1.12,0.95,3.0,0,0,1,0,0,0,8,94,62.4,0
+T0335,Rua Sete de Setembro,Parque Suzano,coletora,213,1.86,1.85,3.5,0,0,0,0,0,0,14,79,92.5,0
+T0336,Av. Antônio Marques Figueira,Vila Figueira,arterial,76,2.15,0.84,4.7,0,0,6,1,1,0,30,67,58.4,0
+T0337,Rua Rui Barbosa,Vila Costa,local,207,1.35,0.58,2.5,0,1,3,1,0,0,16,146,41.3,1
+T0338,Av. Antônio Marques Figueira,Vila Figueira,arterial,173,2.17,1.72,4.0,0,0,3,0,1,0,6,53,86.0,0
+T0339,Rua Missionária Sara Cooper,Jardim Santa Helena,local,103,1.6,1.53,0.8,2,0,0,0,0,0,29,147,81.6,0
+T0340,Rua Nove de Julho,Jardim Santa Helena,local,129,1.49,0.88,0.2,0,0,5,0,1,0,7,26,60.1,1
+T0341,Rua Nove de Julho,Jardim Santa Helena,local,90,1.71,1.33,5.7,0,1,2,0,0,1,8,91,70.2,1
+T0342,Rua Nove de Julho,Jardim Santa Helena,local,47,1.73,1.39,1.9,1,0,2,0,1,0,26,40,78.9,0
+T0343,Rua Marechal Deodoro,Centro,coletora,42,1.53,1.24,1.5,2,0,2,0,0,0,24,194,60.4,1
+T0344,Av. Armando Salles de Oliveira,Parque Suzano,arterial,181,2.84,1.79,9.0,1,0,4,1,0,0,30,40,66.9,1
+T0345,Av. Paulo Portela,Jardim Paulista,arterial,190,2.57,2.17,3.8,2,0,2,0,1,0,30,48,70.9,0
+T0346,Rua Baruel,Vila Figueira,local,172,0.9,0.58,4.9,3,1,1,0,1,0,31,50,31.0,1
+T0347,Rua Baruel,Vila Figueira,local,234,1.17,0.92,3.7,0,0,1,0,1,0,7,60,72.1,1
+T0348,Rua Felício de Camargo,Centro,coletora,234,2.03,1.87,6.6,3,1,1,0,0,1,34,71,57.7,1
+T0349,Rua Felício de Camargo,Centro,coletora,188,2.38,1.88,8.3,1,0,4,0,0,0,15,221,63.8,0
+T0350,Rua Rui Barbosa,Vila Costa,local,109,1.3,0.85,2.9,0,0,3,0,0,0,23,67,59.5,1
+T0351,Rua Marechal Deodoro,Centro,coletora,42,2.17,1.94,1.2,0,0,1,0,0,0,4,162,100.0,0
+T0352,Av. Paulo Portela,Jardim Paulista,arterial,184,2.73,2.58,3.1,2,0,1,0,1,0,26,92,75.9,0
+T0353,Rua Prudente de Moraes,Centro,coletora,159,1.37,0.53,15.2,1,0,3,1,0,0,29,116,19.4,1
+T0354,Av. Antônio Marques Figueira,Vila Figueira,arterial,50,2.09,1.96,5.7,3,0,1,0,1,0,33,85,75.1,0
+T0355,Rua Prudente de Moraes,Centro,coletora,125,2.18,1.5,9.7,1,0,1,1,0,0,15,223,73.2,0
+T0356,Rua Sete de Setembro,Parque Suzano,coletora,156,1.46,1.4,4.6,1,0,0,0,0,0,33,135,82.7,0
+T0357,Rua General Francisco Glicério,Centro,local,112,1.44,0.4,3.5,0,0,4,1,0,0,10,306,36.3,1
+T0358,Av. Antônio Marques Figueira,Vila Figueira,arterial,218,2.81,2.53,3.9,0,1,2,0,0,1,2,70,75.6,0
+T0359,Rua General Francisco Glicério,Centro,local,83,1.22,0.4,7.8,3,1,3,1,1,0,26,240,0.0,1
+T0360,Rua Baruel,Vila Figueira,local,67,1.62,1.18,6.5,1,0,3,0,0,0,27,93,67.8,0
+T0361,Av. Armando Salles de Oliveira,Parque Suzano,arterial,124,3.0,2.17,6.2,2,0,3,1,0,1,28,87,72.4,0
+T0362,Rua Felício de Camargo,Centro,coletora,244,1.98,1.59,4.4,1,0,3,0,0,0,24,75,74.1,0
+T0363,Av. Paulo Portela,Jardim Paulista,arterial,44,2.49,1.65,1.6,1,1,6,0,1,1,9,50,68.7,1
+T0364,Rua Rui Barbosa,Vila Costa,local,147,1.45,1.22,0.3,1,0,0,0,0,0,30,90,76.2,1
+T0365,Rua Nove de Julho,Jardim Santa Helena,local,92,1.63,1.09,4.9,1,0,1,1,0,0,19,58,59.8,0
+T0366,Av. Antônio Marques Figueira,Vila Figueira,arterial,66,1.93,1.79,3.0,0,0,1,0,1,0,9,60,91.7,0
+T0367,Rua Tiradentes,Vila Costa,local,158,1.46,1.31,3.0,0,1,0,0,0,0,15,56,75.5,0
+T0368,Rua Marechal Deodoro,Centro,coletora,156,1.2,0.66,3.1,1,0,3,0,0,1,27,135,44.8,1
+T0369,Rua Missionária Sara Cooper,Jardim Santa Helena,local,131,1.3,0.45,15.6,0,0,3,1,0,0,22,85,21.3,1
+T0370,Rua Felício de Camargo,Centro,coletora,88,1.93,1.31,3.2,2,0,4,0,0,0,32,408,58.7,0
+T0371,Av. Antônio Marques Figueira,Vila Figueira,arterial,107,1.85,1.52,8.0,1,1,2,0,0,0,16,108,58.4,1
+T0372,Rua Marechal Deodoro,Centro,coletora,186,1.32,0.95,5.2,0,0,2,0,1,0,4,342,63.7,0
+T0373,Rua Rui Barbosa,Vila Costa,local,186,1.28,1.12,4.5,2,0,0,0,0,1,34,45,67.7,1
+T0374,Rua Baruel,Vila Figueira,local,90,1.85,1.56,6.4,0,0,1,0,1,1,10,210,83.8,0
+T0375,Rua Missionária Sara Cooper,Jardim Santa Helena,local,162,0.98,0.8,8.3,1,0,0,0,0,0,14,111,50.8,1
+T0376,Rua Marechal Deodoro,Centro,coletora,243,1.74,1.37,5.5,1,0,2,0,1,0,18,115,79.2,1
+T0377,Rua Nove de Julho,Jardim Santa Helena,local,50,1.23,1.2,3.6,2,0,0,0,0,0,22,68,64.3,1
+T0378,Rua Benjamin Constant,Centro,local,203,1.39,1.14,7.5,2,0,1,0,1,1,31,318,62.1,1
+T0379,Rua General Francisco Glicério,Centro,local,200,1.6,0.74,13.6,0,1,3,1,1,0,17,152,30.5,1
+T0380,Av. Armando Salles de Oliveira,Parque Suzano,arterial,221,2.69,1.61,7.9,2,0,4,1,1,0,32,50,69.9,0
+T0381,Rua Prudente de Moraes,Centro,coletora,108,2.13,,7.5,0,0,3,0,1,0,13,108,92.2,0
+T0382,Rua Baruel,Vila Figueira,local,157,1.35,1.32,3.7,0,1,0,0,1,1,13,76,66.8,0
+T0383,Rua Baruel,Vila Figueira,local,120,1.37,1.12,4.6,1,0,2,0,1,1,24,140,65.3,1
+T0384,Rua Prudente de Moraes,Centro,coletora,233,1.35,1.15,2.5,1,0,1,0,0,1,34,182,75.6,0
+T0385,Av. Antônio Marques Figueira,Vila Figueira,arterial,55,2.52,2.34,5.6,0,0,1,0,1,0,5,67,92.4,0
+T0386,Rua General Francisco Glicério,centro ,local,67,1.27,0.74,4.5,2,0,4,0,0,0,31,352,39.1,1
+T0387,Rua General Francisco Glicério,Centro,local,75,1.42,1.27,6.5,2,0,1,0,0,0,28,190,61.0,1
+T0388,Rua Nove de Julho,Jardim Santa Helena,local,87,1.75,1.59,6.2,0,1,1,0,0,0,12,92,74.0,0
+T0389,Av. Armando Salles de Oliveira,Parque Suzano,arterial,57,2.72,2.11,3.6,2,0,5,0,1,0,25,64,68.9,0
+T0390,Rua Felício de Camargo,Centro,coletora,98,2.21,1.08,6.0,1,0,6,1,0,0,33,79,52.3,1
+T0391,Av. Paulo Portela,Jardim Paulista,arterial,130,2.15,2.13,3.3,1,0,0,0,1,0,30,100,89.6,0
+T0392,Rua Benjamin Constant,Centro,local,185,1.63,1.35,0.3,0,1,2,0,0,0,6,139,76.4,0
+T0393,Av. Armando Salles de Oliveira,Parque Suzano,arterial,160,2.57,2.28,5.8,0,0,2,0,1,0,7,154,84.3,0
+T0394,Av. Antônio Marques Figueira,Vila Figueira,arterial,87,2.37,1.45,7.9,0,0,4,1,1,0,11,45,81.2,0
+T0395,Av. Armando Salles de Oliveira,Parque Suzano,arterial,160,2.99,2.56,1.1,0,0,0,1,1,0,11,42,100.0,0
+T0396,Rua Sete de Setembro,Parque Suzano,coletora,123,1.75,1.61,4.4,1,1,1,0,0,0,22,134,64.4,0
+T0397,Rua General Francisco Glicério,Centro,local,236,1.1,0.91,2.1,2,0,1,0,1,0,24,271,64.4,1
+T0398,Rua Rui Barbosa,Vila Costa,local,173,1.01,0.76,3.6,1,0,2,0,1,0,6,61,55.2,1
+T0399,Av. Armando Salles de Oliveira,Parque Suzano,arterial,120,2.51,,3.4,0,0,2,0,0,1,5,57,93.0,0
+T0400,Av. Armando Salles de Oliveira,Parque Suzano,arterial,60,2.92,2.5,1.3,0,0,2,0,1,0,17,56,96.0,0
+T0401,Rua Felício de Camargo,Centro,coletora,154,1.5,1.24,7.7,2,1,2,0,1,0,27,279,50.5,1
+T0402,Rua General Francisco Glicério,Centro,local,106,1.38,0.4,10.6,3,0,5,1,1,1,28,244,7.2,1
+T0403,Av. Antônio Marques Figueira,Vila Figueira,arterial,216,1.64,,9.1,1,0,2,0,0,0,10,145,65.9,0
+T0404,Rua Prudente de Moraes,Centro,coletora,163,1.79,0.97,1.4,0,0,3,1,1,0,5,190,66.8,0
+T0405,Rua Prudente de Moraes,Centro,coletora,182,2.13,1.91,14.3,1,0,1,0,0,0,31,173,67.7,0
+T0406,Rua Sete de Setembro,Parque Suzano,coletora,185,1.74,1.64,4.6,2,0,0,0,1,0,26,53,77.2,0
+T0407,Rua Benjamin Constant,Centro,local,180,1.14,0.4,1.2,2,0,3,1,0,0,31,146,20.7,1
+T0408,Av. Paulo Portela,Jardim Paulista,arterial,68,2.39,2.1,2.9,1,0,2,0,1,0,32,93,81.3,0
+T0409,Rua Prudente de Moraes,Centro,coletora,96,2.3,2.03,3.5,1,0,2,0,1,0,9,119,87.4,0
+T0410,Av. Paulo Portela,Jardim Paulista,arterial,185,2.95,2.74,1.8,1,0,0,0,1,1,32,47,95.5,0
+T0411,Rua Felício de Camargo,Centro,coletora,95,2.45,2.18,4.1,3,0,2,0,1,0,26,226,62.9,0
+T0412,Rua Tiradentes,Vila Costa,local,142,1.7,1.04,10.4,3,0,1,1,1,1,28,72,41.4,1
+T0413,Rua Nove de Julho,Jardim Santa Helena,local,96,1.61,0.77,4.1,2,0,7,0,0,1,17,67,26.1,1
+T0414,Rua Sete de Setembro,Parque Suzano,coletora,206,2.2,2.05,6.4,2,1,0,0,0,0,25,61,62.3,1
+T0415,Av. Antônio Marques Figueira,Vila Figueira,arterial,70,2.05,1.64,5.8,1,0,3,0,1,0,18,51,89.2,0
+T0416,Rua Prudente de Moraes,Centro,coletora,174,1.71,0.83,0.9,0,0,2,1,1,0,28,164,70.6,0
+T0417,Av. Paulo Portela,Jardim Paulista,arterial,146,2.89,1.94,4.6,1,0,4,1,1,0,27,66,80.0,0
+T0418,Rua Professor Roberto David,Vila Figueira,local,194,1.76,1.42,4.3,0,0,2,0,0,1,6,136,85.1,0
+T0419,Rua Marechal Deodoro,Centro,coletora,238,1.96,1.8,9.2,1,1,0,0,0,0,28,275,53.4,0
+T0420,Rua Professor Roberto David,Vila Figueira,local,53,1.57,1.46,4.2,1,0,0,0,0,0,21,55,85.5,0
+T0421,Rua Prudente de Moraes,Centro,coletora,237,1.75,1.29,10.4,0,0,3,0,0,0,2,131,68.2,1
+T0422,Av. Antônio Marques Figueira,Vila Figueira,arterial,175,2.08,2.07,5.0,3,0,0,0,1,0,34,92,69.1,0
+T0423,Av. Armando Salles de Oliveira,Parque Suzano,arterial,230,2.88,1.95,9.2,1,0,3,1,0,0,24,78,50.2,0
+T0424,Rua Rui Barbosa,Vila Costa,local,79,1.72,1.46,1.8,2,0,2,0,1,0,34,152,72.2,0
+T0425,Rua General Francisco Glicério,Centro,local,243,0.96,0.8,1.9,2,0,1,0,1,0,16,117,51.4,1
+T0426,Rua General Francisco Glicério,Centro,local,200,1.08,0.9,5.2,1,0,1,0,0,1,22,238,57.5,1
+T0427,Rua Benjamin Constant,Centro,local,240,1.47,1.18,4.9,1,0,2,0,0,1,24,106,64.7,1
+T0428,Rua Prudente de Moraes,Centro,coletora,62,2.26,1.22,3.4,0,1,5,1,0,1,22,276,55.2,0
+T0429,Rua Nove de Julho,Jardim Santa Helena,local,228,1.4,1.15,2.4,0,0,2,0,1,0,16,91,77.6,0
+T0430,Rua Tiradentes,Vila Costa,local,184,1.24,0.83,0.7,1,0,2,0,0,0,22,121,61.0,1
+T0431,Av. Armando Salles de Oliveira,Parque Suzano,arterial,80,2.9,,1.5,0,0,0,0,0,0,11,80,94.1,0
+T0432,Rua Prudente de Moraes,Centro,coletora,247,2.18,1.93,3.9,1,0,1,0,1,0,17,271,81.6,0
+T0433,Rua Marechal Deodoro,Centro,coletora,140,1.49,0.94,3.1,1,0,1,1,0,0,32,219,52.8,1
+T0434,Rua Nove de Julho,Jardim Santa Helena,local,65,1.3,1.04,4.0,0,0,2,0,0,0,11,82,66.8,0
+T0435,Rua Marechal Deodoro,Centro,coletora,51,2.03,1.91,0.8,2,0,1,0,0,0,32,386,81.6,0
+T0436,Rua Marechal Deodoro,Centro,coletora,43,1.32,1.15,1.1,0,0,0,0,0,0,10,364,76.6,0
+T0437,Rua Rui Barbosa,Vila Costa,local,197,1.31,1.16,1.5,1,0,1,0,0,1,13,159,88.2,0
+T0438,Rua General Francisco Glicério,Centro,local,194,1.43,1.15,7.2,0,0,2,0,0,1,17,275,66.6,1
+T0439,Av. Antônio Marques Figueira,Vila Figueira,arterial,246,2.45,2.02,2.8,1,0,3,0,0,0,28,73,73.1,0
+T0440,Av. Antônio Marques Figueira,Vila Figueira,arterial,73,2.68,2.45,8.6,1,0,1,0,1,0,9,55,76.3,0
+T0441,Rua Sete de Setembro,Parque Suzano,coletora,43,1.39,1.23,3.3,0,0,1,0,1,0,7,72,82.3,0
+T0442,Rua Baruel,Vila Figueira,local,113,1.21,1.15,10.2,0,1,0,0,0,0,9,49,57.3,1
+T0443,Rua Rui Barbosa,Vila Costa,local,83,1.49,1.2,4.7,1,0,2,0,0,0,17,59,67.3,0
+T0444,Rua Baruel,Vila Figueira,local,103,1.3,0.8,5.3,0,1,3,0,0,0,4,86,42.6,1
+T0445,Rua General Francisco Glicério,Centro,local,73,1.47,1.38,2.1,2,0,0,0,0,0,18,193,67.7,0
+T0446,Rua Felício de Camargo,Centro,coletora,40,1.65,1.61,4.0,2,0,0,0,1,0,17,209,75.8,0
+T0447,Av. Paulo Portela,Jardim Paulista,arterial,103,2.93,2.67,1.6,0,0,2,0,0,0,9,92,92.1,0
+T0448,Rua Felício de Camargo,centro ,coletora,214,2.14,1.49,2.6,1,0,1,1,1,0,22,406,89.3,0
+T0449,Av. Armando Salles de Oliveira,Parque Suzano,arterial,59,2.77,1.76,3.6,1,0,5,1,0,0,28,74,62.0,0
+T0450,Av. Armando Salles de Oliveira,Parque Suzano,arterial,212,2.43,1.99,3.4,0,1,3,0,1,0,19,37,75.5,0
+T0451,Rua Missionária Sara Cooper,Jardim Santa Helena,local,200,1.45,1.39,8.2,0,0,0,0,0,0,5,95,78.9,1
+T0452,Rua Marechal Deodoro,Centro,coletora,176,2.1,1.62,2.9,0,0,3,0,0,0,6,262,86.3,0
+T0453,Rua Felício de Camargo,Centro,coletora,123,2.0,0.9,7.7,2,0,5,1,1,0,33,276,34.7,1
+T0454,Rua Sete de Setembro,Parque Suzano,coletora,97,1.96,1.68,4.4,3,0,1,0,0,0,30,274,66.0,1
+T0455,Rua Benjamin Constant,Centro,local,88,1.6,0.81,4.2,2,0,3,1,1,1,32,101,38.2,1
+T0456,Rua Marechal Deodoro,Centro,coletora,223,1.21,0.4,1.4,2,0,3,1,0,1,25,135,26.3,1
+T0457,Rua Nove de Julho,Jardim Santa Helena,local,189,1.45,1.13,3.7,2,0,2,0,0,0,35,93,69.6,1
+T0458,Av. Paulo Portela,Jardim Paulista,arterial,128,2.71,2.47,4.8,2,0,1,0,1,0,23,108,66.6,0
+T0459,Rua General Francisco Glicério,Centro,local,199,1.15,0.4,,1,0,5,1,0,1,14,282,25.2,1
+T0460,Rua Marechal Deodoro,Centro,coletora,124,1.69,1.54,4.7,0,1,1,0,0,1,8,428,79.7,1
+T0461,Rua Tiradentes,Vila Costa,local,100,1.49,0.61,2.5,2,0,3,1,0,0,32,58,38.4,1
+T0462,Rua Professor Roberto David,Vila Figueira,local,210,1.03,0.76,5.0,2,0,0,0,0,0,27,129,54.5,1
+T0463,Rua Nove de Julho,Jardim Santa Helena,local,235,1.74,1.72,7.7,0,0,0,0,0,0,19,87,90.4,0
+T0464,Rua Baruel,Vila Figueira,local,103,0.9,0.58,6.8,1,0,2,0,0,0,25,176,43.4,1
+T0465,Rua General Francisco Glicério,Centro,local,113,1.43,1.3,6.1,1,0,0,0,0,1,27,153,68.2,0
+T0466,Rua Marechal Deodoro,Centro,coletora,140,1.66,1.41,3.9,0,0,2,0,0,0,16,196,92.2,0
+T0467,Av. Antônio Marques Figueira,Vila Figueira,arterial,230,2.3,2.1,7.9,1,0,1,0,0,0,25,70,77.9,0
+T0468,Rua Sete de Setembro,Parque Suzano,coletora,239,1.92,1.78,5.8,2,0,1,0,0,0,25,61,65.7,0
+T0469,Rua Prudente de Moraes,Centro,coletora,156,2.23,1.11,6.6,0,0,5,1,1,0,6,393,59.1,1
+T0470,Av. Antônio Marques Figueira,Vila Figueira,arterial,81,2.64,1.55,18.0,0,0,5,1,0,0,10,106,62.1,1
+T0471,Av. Antônio Marques Figueira,Vila Figueira,arterial,121,2.27,1.78,4.8,2,1,4,0,1,0,20,151,59.8,1
+T0472,Rua Sete de Setembro,Parque Suzano,coletora,40,1.85,1.79,,1,0,0,0,1,0,21,167,85.4,0
+T0473,Rua Felício de Camargo,Centro,coletora,137,1.74,1.09,5.4,1,0,2,1,0,0,22,192,48.6,1
+T0474,Rua Tiradentes,Vila Costa,local,210,1.06,0.67,5.6,1,0,3,0,1,0,16,124,42.9,1
+T0475,Rua Benjamin Constant,Centro,local,137,1.79,1.73,2.6,0,0,0,0,0,0,26,355,95.0,0
+T0476,Rua Rui Barbosa,Vila Costa,local,60,1.07,0.43,5.4,0,1,4,0,0,0,18,127,24.6,1
+T0477,Rua Rui Barbosa,Vila Costa,local,48,1.18,0.4,8.2,1,1,3,1,0,0,23,175,1.2,1
+T0478,Rua Tiradentes,Vila Costa,local,77,1.61,1.54,7.3,0,0,0,0,0,0,18,112,77.4,0
+T0479,Rua General Francisco Glicério,Centro,local,75,0.9,0.81,2.3,2,1,0,0,0,0,22,85,36.2,1
+T0480,Rua Rui Barbosa,Vila Costa,local,101,1.54,1.23,8.5,1,0,2,0,0,0,15,160,56.3,1
+T0481,Rua General Francisco Glicério,Centro,local,210,1.05,0.63,6.1,0,0,1,0,0,0,2,69,45.9,1
+T0482,Av. Antônio Marques Figueira,Vila Figueira,arterial,53,2.06,1.85,2.8,0,0,1,0,0,0,10,127,89.1,0
+T0483,Rua Felício de Camargo,Centro,coletora,249,1.83,1.32,0.6,0,0,4,0,0,0,6,402,81.2,1
+T0484,Rua Baruel,Vila Figueira,local,156,0.94,0.81,,1,0,0,0,0,0,17,46,59.3,1
+T0485,Rua Prudente de Moraes,Centro,coletora,225,2.07,1.41,9.5,2,0,2,1,0,0,16,107,61.3,1
+T0486,Rua Missionária Sara Cooper,Jardim Santa Helena,local,224,1.83,1.1,1.2,2,0,5,0,0,0,27,105,61.1,1
+T0487,Rua Prudente de Moraes,Centro,coletora,102,2.2,2.08,5.3,2,1,1,0,0,0,24,313,55.1,0
+T0488,Rua Baruel,Vila Figueira,local,91,1.34,1.17,6.8,2,0,1,0,0,0,22,95,57.5,1
+T0489,Rua Rui Barbosa,Vila Costa,local,171,1.22,1.19,1.7,2,0,0,0,0,0,28,45,63.4,1
+T0490,Rua Marechal Deodoro,Centro,coletora,135,1.63,1.16,2.7,0,0,2,0,0,0,22,482,83.0,0
+T0491,Av. Armando Salles de Oliveira,Parque Suzano,arterial,81,2.63,2.48,8.1,0,1,1,0,0,0,10,116,64.5,0
+T0492,Rua Professor Roberto David,Vila Figueira,local,248,1.48,1.29,11.0,1,0,1,0,0,0,17,42,59.7,1
+T0493,Av. Paulo Portela,Jardim Paulista,arterial,47,2.54,1.74,4.8,1,0,3,1,0,0,20,134,75.3,1
+T0494,Rua Sete de Setembro,Parque Suzano,coletora,246,1.53,1.22,2.8,2,0,1,0,0,0,32,24,63.2,1
+T0495,Rua Rui Barbosa,Vila Costa,local,97,1.92,1.66,5.1,0,0,2,0,0,0,15,113,77.6,0
+T0496,Rua Rui Barbosa,Vila Costa,local,62,0.99,0.4,1.2,0,1,5,0,0,0,9,34,26.4,1
+T0497,Av. Armando Salles de Oliveira,Parque Suzano,arterial,126,2.54,2.28,1.8,0,0,1,0,0,0,4,113,100.0,0
+T0498,Rua Benjamin Constant,Centro,local,191,1.74,1.07,3.9,2,0,2,1,1,1,26,252,60.9,0
+T0499,Rua Marechal Deodoro,Centro,coletora,86,1.46,1.22,11.5,1,0,1,0,0,0,25,394,59.1,1
+T0500,Rua Felício de Camargo,Centro,coletora,229,2.3,2.05,3.2,1,0,2,0,0,0,16,240,84.9,0
+T0501,Rua Tiradentes,Vila Costa,local,104,1.06,0.4,9.7,1,0,5,1,0,0,3,70,20.4,1
+T0502,Rua General Francisco Glicério,Centro,local,168,1.06,0.4,0.9,0,1,2,1,0,1,2,113,24.2,1
+T0503,Rua Nove de Julho,Jardim Santa Helena,local,153,0.9,0.87,5.3,2,0,0,0,0,0,26,53,49.1,1
+T0504,Rua General Francisco Glicério,Centro,local,235,1.6,0.53,7.4,0,0,5,1,0,0,15,346,25.3,1
+T0505,Rua Prudente de Moraes,Centro,coletora,164,1.63,0.72,0.6,0,0,4,1,0,0,11,230,59.9,0
+T0506,Rua General Francisco Glicério,Centro,local,246,1.08,0.83,1.6,1,0,1,0,0,0,23,282,61.0,1
+T0507,Av. Antônio Marques Figueira,Vila Figueira,arterial,225,2.61,2.13,6.2,0,0,0,1,0,0,2,99,78.8,0
+T0508,Rua Marechal Deodoro,Centro,coletora,228,1.79,0.96,3.4,2,0,3,1,0,1,35,122,47.8,1
+T0509,Av. Antônio Marques Figueira,centro ,arterial,70,2.7,2.54,3.6,2,0,0,0,1,0,35,93,72.5,0
+T0510,Rua Rui Barbosa,Vila Costa,local,232,1.58,0.75,1.3,2,0,3,1,1,0,31,68,37.7,1
+T0511,Av. Antônio Marques Figueira,Vila Figueira,arterial,118,2.65,1.87,7.5,1,0,3,1,1,0,4,32,72.2,0
+T0512,Rua Baruel,Vila Figueira,local,196,1.04,0.78,3.8,1,0,1,0,0,0,29,129,58.3,0
+T0513,Rua Missionária Sara Cooper,Jardim Santa Helena,local,151,1.36,0.88,0.2,1,0,3,0,0,0,35,65,50.7,1
+T0514,Rua Felício de Camargo,Centro,coletora,120,2.2,1.94,2.8,0,0,1,0,0,0,34,177,90.5,0
+T0515,Rua Professor Roberto David,Vila Figueira,local,55,1.71,1.29,8.5,1,0,3,0,0,0,25,117,61.5,1
+T0516,Rua Missionária Sara Cooper,Jardim Santa Helena,local,57,1.67,1.28,3.9,0,0,3,0,0,0,22,76,76.8,1
+T0517,Rua Baruel,Vila Figueira,local,79,0.95,0.47,4.7,0,0,3,0,1,0,25,79,50.7,1
+T0518,Av. Armando Salles de Oliveira,Parque Suzano,arterial,153,2.25,11.0,1.6,0,1,6,1,1,1,2,199,64.9,1
+T0519,Rua Professor Roberto David,Vila Figueira,local,78,1.1,0.6,5.3,1,0,4,0,0,0,29,100,39.2,1
+T0520,Rua Marechal Deodoro,Centro,coletora,147,1.54,0.8,1.3,1,0,2,1,0,0,10,341,51.0,1
+T0521,Rua Sete de Setembro,Parque Suzano,coletora,156,1.85,1.47,6.4,2,0,2,0,0,0,17,22,70.1,1
+T0522,Rua Nove de Julho,Jardim Santa Helena,local,86,1.12,0.73,3.5,2,0,3,0,1,1,29,87,47.6,1
+T0523,Rua Nove de Julho,Jardim Santa Helena,local,190,1.43,1.11,1.5,0,0,2,0,0,0,2,109,78.6,0
+T0524,Av. Armando Salles de Oliveira,Parque Suzano,arterial,197,2.77,2.55,6.6,0,1,1,0,1,0,14,72,78.0,0
+T0525,Rua Benjamin Constant,Centro,local,129,1.78,0.78,4.3,0,0,4,1,0,0,15,414,42.2,1
+T0526,Rua Sete de Setembro,Parque Suzano,coletora,234,1.7,1.31,3.9,1,0,3,0,0,0,29,50,68.2,1
+T0527,Rua Nove de Julho,Jardim Santa Helena,local,133,1.65,1.51,12.1,1,0,1,0,0,0,31,112,74.4,0
+T0528,Rua Missionária Sara Cooper,Jardim Santa Helena,local,142,1.0,0.51,2.5,0,0,3,0,0,0,14,75,47.2,1
+T0529,Rua General Francisco Glicério,Centro,local,124,1.08,0.9,4.3,1,0,1,0,1,0,5,104,61.6,0
+T0530,Rua Nove de Julho,Jardim Santa Helena,local,225,1.51,1.49,3.7,1,0,0,0,0,0,9,84,77.9,0
+T0531,Av. Paulo Portela,Jardim Paulista,arterial,218,2.29,1.76,5.1,1,0,4,0,1,1,7,71,82.1,0
+T0532,Rua Tiradentes,Vila Costa,local,175,1.25,0.78,3.0,1,0,3,0,0,0,14,126,52.1,0
+T0533,Rua Felício de Camargo,Centro,coletora,161,2.06,1.35,3.4,0,0,2,1,0,0,19,195,75.7,0
+T0534,Rua Missionária Sara Cooper,Jardim Santa Helena,local,250,1.08,0.76,2.6,0,0,2,0,1,1,8,145,71.2,1
+T0535,Av. Paulo Portela,Jardim Paulista,arterial,157,2.51,2.27,2.2,0,0,2,0,0,1,5,53,88.0,0
+T0536,Rua Felício de Camargo,Centro,coletora,167,1.95,1.77,8.3,0,0,1,0,0,0,7,179,83.5,0
+T0537,Rua Professor Roberto David,Vila Figueira,local,234,1.63,1.25,3.2,2,1,2,0,1,0,22,30,58.4,1
+T0538,Rua Marechal Deodoro,Centro,coletora,214,1.91,1.73,9.9,0,0,1,0,1,0,17,301,81.9,1
+T0539,Av. Paulo Portela,Jardim Paulista,arterial,234,2.52,2.2,5.6,1,0,1,0,0,0,31,32,75.0,0
+T0540,Av. Armando Salles de Oliveira,Parque Suzano,arterial,111,2.43,2.15,5.5,2,0,2,0,1,0,35,167,73.3,0
+T0541,Rua Professor Roberto David,Vila Figueira,local,117,1.78,1.25,4.4,1,0,3,0,1,0,8,84,73.4,0
+T0542,Rua Tiradentes,Vila Costa,local,68,1.54,1.38,8.8,2,0,1,0,0,1,33,57,66.3,0
+T0543,Av. Paulo Portela,Jardim Paulista,arterial,174,2.22,2.2,7.4,1,0,0,0,0,0,20,113,88.5,0
+T0544,Rua Marechal Deodoro,Centro,coletora,121,1.73,1.53,3.5,1,0,1,0,0,0,27,233,81.2,0
+T0545,Av. Paulo Portela,Jardim Paulista,arterial,79,2.3,1.92,11.7,0,0,3,0,1,0,4,33,82.7,0
+T0546,Rua Professor Roberto David,Vila Figueira,local,183,0.9,0.58,8.4,2,1,2,0,1,0,27,123,21.0,1
+T0547,Rua Felício de Camargo,centro ,coletora,48,1.69,1.41,9.6,2,0,2,0,1,0,26,561,72.8,0
+T0548,Rua Benjamin Constant,Centro,local,134,1.37,1.21,1.1,2,0,1,0,1,0,23,83,73.9,0
+T0549,Rua Baruel,Vila Figueira,local,111,1.04,0.59,3.9,1,0,3,0,1,1,16,93,47.0,1
+T0550,Rua Tiradentes,Vila Costa,local,176,1.02,0.83,3.3,2,0,1,0,0,0,26,166,49.8,0
+T0551,Rua Tiradentes,Vila Costa,local,108,1.38,0.95,5.9,0,0,3,0,0,1,18,71,70.3,0
+T0552,Rua Marechal Deodoro,Centro,coletora,146,1.81,0.79,0.1,0,0,4,1,1,0,13,78,60.0,0
+T0553,Av. Antônio Marques Figueira,Vila Figueira,arterial,228,2.04,15.0,3.8,0,0,3,1,1,0,11,87,76.5,1
+T0554,Rua Tiradentes,Vila Costa,local,249,1.56,1.01,0.7,2,0,3,0,0,0,31,128,63.6,0
+T0555,Av. Armando Salles de Oliveira,Parque Suzano,arterial,234,1.97,1.79,4.1,2,0,1,0,0,1,19,54,76.0,0
+T0556,Rua Tiradentes,Vila Costa,local,70,1.63,1.27,3.2,2,0,3,0,1,1,28,25,63.7,0
+T0557,Av. Armando Salles de Oliveira,Parque Suzano,arterial,147,2.41,2.38,2.3,3,0,0,0,1,0,31,32,72.2,0
+T0558,Rua General Francisco Glicério,Centro,local,68,0.9,0.4,2.0,2,0,6,1,1,1,28,102,26.7,1
+T0559,Rua Baruel,Vila Figueira,local,62,1.51,1.36,,2,0,1,0,0,0,25,132,63.8,0
+T0560,Rua Baruel,Vila Figueira,local,56,1.32,0.88,8.8,0,1,2,0,1,0,16,57,49.8,1
+T0561,Rua Nove de Julho,Jardim Santa Helena,local,215,1.76,1.49,0.6,1,0,2,0,0,0,19,71,81.5,0
+T0562,Rua Benjamin Constant,Centro,local,123,1.57,1.39,2.4,0,0,0,0,0,0,15,252,87.0,0
+T0563,Rua General Francisco Glicério,Centro,local,40,1.38,,12.2,0,0,4,1,1,0,12,72,24.0,1
+T0564,Av. Paulo Portela,Jardim Paulista,arterial,195,2.36,,3.9,0,0,0,0,1,0,31,72,92.8,0
+T0565,Av. Antônio Marques Figueira,Vila Figueira,arterial,210,2.51,1.73,6.2,1,0,2,1,1,0,14,66,80.1,0
+T0566,Rua Baruel,Vila Figueira,local,206,1.15,0.88,3.7,3,0,2,0,1,0,33,83,54.8,1
+T0567,Rua Missionária Sara Cooper,Jardim Santa Helena,local,228,1.19,0.67,5.3,2,0,4,0,1,0,33,77,27.5,1
+T0568,Rua Sete de Setembro,Parque Suzano,coletora,147,1.82,,12.4,2,0,1,0,1,0,32,61,58.2,1
+T0569,Rua Sete de Setembro,Parque Suzano,coletora,205,1.5,1.33,2.2,1,0,1,0,0,0,27,62,79.5,1
+T0570,Rua Nove de Julho,Jardim Santa Helena,local,78,1.47,1.05,4.0,0,0,3,0,0,0,20,82,63.7,1
+T0571,Rua Sete de Setembro,Parque Suzano,coletora,145,2.01,1.81,5.4,0,0,1,0,1,0,9,56,83.0,0
+T0572,Rua Missionária Sara Cooper,Jardim Santa Helena,local,52,1.42,,2.0,0,1,5,1,0,0,7,174,20.6,1
+T0573,Av. Armando Salles de Oliveira,Parque Suzano,arterial,201,2.75,2.07,7.5,2,0,1,1,0,1,27,152,71.7,0
+T0574,Av. Armando Salles de Oliveira,Parque Suzano,arterial,115,2.49,1.8,3.7,2,0,2,1,1,0,21,108,75.5,0
+T0575,Rua General Francisco Glicério,Centro,local,73,1.29,1.1,1.3,2,0,1,0,1,1,26,179,70.2,1
+T0576,Rua General Francisco Glicério,Centro,local,155,1.29,1.07,2.7,0,0,1,0,0,1,9,181,76.6,1
+T0577,Rua Professor Roberto David,Vila Figueira,local,184,2.05,1.91,7.0,2,0,1,0,1,0,30,129,83.8,0
+T0578,Rua Prudente de Moraes,Centro,coletora,79,1.59,0.4,2.9,1,1,8,1,0,0,31,215,12.0,1
+T0579,Rua Felício de Camargo,Centro,coletora,163,2.58,1.75,2.1,0,0,2,1,1,0,25,133,89.9,0
+T0580,Rua Sete de Setembro,Parque Suzano,coletora,131,1.66,1.61,4.1,1,0,0,0,0,0,34,98,82.5,0
+T0581,Rua Sete de Setembro,Parque Suzano,coletora,175,1.78,1.66,4.0,0,0,1,0,0,0,5,101,94.3,0
+T0582,Rua Prudente de Moraes,Centro,coletora,129,2.06,1.46,10.1,0,0,5,0,0,0,21,244,66.9,0
+T0583,Rua Felício de Camargo,Centro,coletora,231,2.15,2.03,8.4,2,0,1,0,0,0,22,123,70.9,0
+T0584,Av. Armando Salles de Oliveira,Parque Suzano,arterial,167,2.57,2.27,4.8,2,0,2,0,1,1,24,47,82.4,0
+T0585,Av. Antônio Marques Figueira,Vila Figueira,arterial,59,2.45,1.42,3.9,0,0,5,1,1,0,3,60,78.6,0
+T0586,Av. Armando Salles de Oliveira,Parque Suzano,arterial,180,2.99,2.5,4.3,1,0,3,0,1,1,7,50,87.1,0
+T0587,Rua Marechal Deodoro,Centro,coletora,52,2.45,1.16,6.1,0,0,7,1,0,0,20,105,54.5,1
+T0588,Rua Tiradentes,Vila Costa,local,136,1.6,1.35,3.2,0,0,2,0,1,0,10,123,91.1,0
+T0589,Rua General Francisco Glicério,Centro,local,230,1.49,1.2,3.2,0,0,2,0,1,0,3,169,80.0,0
+T0590,Av. Antônio Marques Figueira,Vila Figueira,arterial,100,2.35,1.95,5.0,1,0,2,0,1,0,32,71,79.0,0
+T0591,Av. Antônio Marques Figueira,Vila Figueira,arterial,131,2.87,,7.9,2,0,2,0,0,0,28,78,71.6,0
+T0592,Av. Armando Salles de Oliveira,Parque Suzano,arterial,128,2.55,2.41,3.0,1,0,0,0,0,0,29,29,83.9,0
+T0593,Rua Missionária Sara Cooper,Jardim Santa Helena,local,228,1.53,1.04,3.5,1,0,3,0,1,0,13,108,63.5,1
+T0594,Rua Felício de Camargo,Centro,coletora,160,1.67,0.7,2.8,2,1,4,1,1,1,28,177,25.5,1
+T0595,Rua Felício de Camargo,Centro,coletora,225,1.19,0.73,1.4,2,0,3,0,0,0,33,118,42.1,1
+T0596,Rua Marechal Deodoro,Centro,coletora,124,2.36,1.7,2.1,0,0,5,0,1,0,4,165,93.1,0
+T0597,Av. Paulo Portela,Jardim Paulista,arterial,47,2.8,2.01,6.9,1,0,2,1,1,0,24,124,73.3,0
+T0598,Av. Antônio Marques Figueira,Vila Figueira,arterial,185,2.65,2.6,3.3,1,0,0,0,1,1,7,74,87.3,0
+T0599,Rua Nove de Julho,Jardim Santa Helena,local,56,1.2,0.78,10.2,0,0,3,0,0,0,30,164,48.0,1
+T0600,Rua Prudente de Moraes,Centro,coletora,130,1.5,0.71,4.2,2,0,3,1,1,0,25,391,38.6,1
+T0601,Rua Professor Roberto David,Vila Figueira,local,123,1.41,1.03,2.7,2,0,3,0,0,0,24,178,65.0,1
+T0602,Av. Paulo Portela,Jardim Paulista,arterial,89,2.52,1.23,6.6,3,1,6,1,0,0,25,105,20.4,1
+T0603,Rua Baruel,Vila Figueira,local,58,1.4,0.69,4.6,2,0,2,1,0,0,16,116,36.6,1
+T0604,Av. Antônio Marques Figueira,Vila Figueira,arterial,167,2.38,2.21,8.5,0,0,1,0,0,0,14,34,88.4,0
+T0605,Rua Rui Barbosa,Vila Costa,local,178,1.76,1.31,13.5,0,0,2,0,1,0,2,65,66.7,0
+T0606,Rua Baruel,Vila Figueira,local,125,1.28,1.0,11.2,1,0,1,0,1,0,12,133,46.3,1
+T0607,Rua Nove de Julho,Jardim Santa Helena,local,228,1.57,0.65,3.1,2,0,3,1,0,0,24,104,32.2,1
+T0608,Rua General Francisco Glicério,Centro,local,244,1.63,0.78,4.0,3,0,3,1,0,1,22,67,28.3,1
+T0609,Av. Armando Salles de Oliveira,Parque Suzano,arterial,249,2.38,2.09,4.4,2,0,2,0,0,0,32,71,68.1,0
+T0610,Av. Armando Salles de Oliveira,Parque Suzano,arterial,48,2.7,1.64,4.0,0,0,5,1,1,1,5,62,86.6,1
+T0611,Rua Nove de Julho,Jardim Santa Helena,local,229,1.32,1.0,4.7,2,0,2,0,0,0,31,95,46.3,1
+T0612,Rua Marechal Deodoro,Centro,coletora,41,1.48,0.43,2.6,1,0,5,1,0,0,14,154,36.6,1
+T0613,Rua Rui Barbosa,Vila Costa,local,129,1.83,1.6,13.4,1,1,1,0,0,0,34,68,58.6,1
+T0614,Rua Sete de Setembro,Parque Suzano,coletora,163,2.21,1.87,4.6,1,0,2,0,0,0,19,82,82.6,0
+T0615,Rua Tiradentes,Vila Costa,local,109,1.64,1.58,11.1,1,0,0,0,0,0,23,75,68.5,0
+T0616,Av. Armando Salles de Oliveira,Parque Suzano,arterial,145,2.97,2.85,1.5,0,0,1,0,1,1,10,97,95.7,0
+T0617,Av. Antônio Marques Figueira,Vila Figueira,arterial,176,2.49,2.3,8.5,1,0,0,0,0,0,15,45,70.7,0
+T0618,Rua Rui Barbosa,Vila Costa,local,107,1.78,1.7,2.9,0,0,0,0,0,0,3,86,88.6,0
+T0619,Rua General Francisco Glicério,Centro,local,232,1.03,0.63,1.9,3,0,3,0,1,1,26,235,42.8,1
+T0620,Rua Prudente de Moraes,Centro,coletora,110,1.94,1.04,4.7,0,0,4,1,1,1,20,114,70.5,1
+T0621,Av. Paulo Portela,Jardim Paulista,arterial,158,2.6,12.0,4.4,3,0,3,1,1,0,35,77,71.9,0
+T0622,Rua Rui Barbosa,Vila Costa,local,60,1.08,1.01,5.1,0,0,0,0,1,1,9,143,66.9,1
+T0623,Rua Rui Barbosa,Vila Costa,local,194,1.18,0.56,5.8,0,0,1,1,0,0,3,96,51.2,1
+T0624,Av. Antônio Marques Figueira,Vila Figueira,arterial,124,2.02,1.81,7.9,1,0,1,0,1,1,16,96,89.1,0
+T0625,Av. Paulo Portela,Jardim Paulista,arterial,224,2.68,2.49,0.6,0,0,1,0,0,1,8,46,93.6,0
+T0626,Rua Sete de Setembro,Parque Suzano,coletora,131,1.75,1.55,1.0,0,0,1,0,0,1,7,166,96.2,0
+T0627,Rua General Francisco Glicério,Centro,local,85,1.36,1.05,8.3,3,0,1,0,0,0,31,119,45.4,1
+T0628,Av. Paulo Portela,Jardim Paulista,arterial,185,2.64,2.2,8.6,1,0,0,1,1,1,22,81,80.7,0
+T0629,Rua Missionária Sara Cooper,Jardim Santa Helena,local,69,1.34,1.11,1.8,3,0,1,0,1,0,29,60,62.7,1
+T0630,Rua Benjamin Constant,Centro,local,250,1.49,1.08,0.3,1,0,3,0,1,1,11,178,83.4,0
+T0631,Rua General Francisco Glicério,Centro,local,195,1.32,0.65,5.2,0,0,5,0,1,0,30,381,49.9,1
+T0632,Av. Armando Salles de Oliveira,Parque Suzano,arterial,58,2.71,2.58,3.5,2,0,1,0,0,1,9,119,77.5,0
+T0633,Rua Tiradentes,Vila Costa,local,215,1.88,1.28,4.7,2,0,3,0,1,0,16,106,53.3,0
+T0634,Av. Armando Salles de Oliveira,Parque Suzano,arterial,100,2.26,1.8,1.0,1,1,3,0,0,0,35,115,69.5,0
+T0635,Rua Missionária Sara Cooper,Jardim Santa Helena,local,250,1.41,1.4,5.4,0,1,0,0,0,0,5,176,66.0,1
+T0636,Rua Nove de Julho,Jardim Santa Helena,local,52,1.13,0.79,8.8,1,0,2,0,0,0,6,24,30.1,0
+T0637,Rua Sete de Setembro,Parque Suzano,coletora,161,2.31,1.99,8.3,1,0,2,0,1,0,27,38,85.7,0
+T0638,Rua Sete de Setembro,Parque Suzano,coletora,131,1.34,1.09,8.1,2,1,2,0,0,1,33,78,43.6,1
+T0639,Rua Felício de Camargo,Centro,coletora,89,2.03,1.42,2.6,0,0,4,0,1,1,15,86,83.3,0
+T0640,Rua Benjamin Constant,Centro,local,249,1.36,0.4,9.1,1,1,5,1,0,0,17,306,3.5,1
+T0133,Av. Paulo Portela,Jardim Paulista,arterial,135,3.07,2.48,2.6,0,0,1,1,1,0,5,116,88.9,0
+T0623,Rua Rui Barbosa,Vila Costa,local,194,1.18,0.56,5.8,0,0,1,1,0,0,3,96,51.2,1
+T0526,Rua Sete de Setembro,Parque Suzano,coletora,234,1.7,1.31,3.9,1,0,3,0,0,0,29,50,68.2,1
+T0290,Av. Paulo Portela,Jardim Paulista,arterial,43,2.65,2.49,3.0,2,0,1,0,1,0,22,91,81.2,0
+T0083,Rua Baruel,Vila Figueira,local,167,1.54,1.19,,1,0,2,0,1,0,25,77,62.3,1
+T0405,Rua Prudente de Moraes,Centro,coletora,182,2.13,1.91,14.3,1,0,1,0,0,0,31,173,67.7,0
+T0450,Av. Armando Salles de Oliveira,Parque Suzano,arterial,212,2.43,1.99,3.4,0,1,3,0,1,0,19,37,75.5,0
+T0632,Av. Armando Salles de Oliveira,Parque Suzano,arterial,58,2.71,2.58,3.5,2,0,1,0,0,1,9,119,77.5,0
+T0627,Rua General Francisco Glicério,Centro,local,85,1.36,1.05,8.3,3,0,1,0,0,0,31,119,45.4,1
+T0381,Rua Prudente de Moraes,Centro,coletora,108,2.13,,7.5,0,0,3,0,1,0,13,108,92.2,0

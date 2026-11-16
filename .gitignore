@@ -1,0 +1,30 @@
+# Build
+target/
+*.class
+*.jar
+*.war
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+
+# SO
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Rascunhos locais
+*.log
+!02-database/validacao.log
+*.zip
+.dsh-switchman/

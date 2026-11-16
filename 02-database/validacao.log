@@ -1,0 +1,81 @@
+==============================================================================
+CALCADA LIVRE — VALIDACAO DA DISCIPLINA DATABASE DESIGN
+Banco: Oracle 19c FIAP  |  schema RM562159  |  DSN oracle.fiap.com.br:1521/orcl
+Data/hora da execucao: 2026-11-12 21:08:38
+==============================================================================
+
+Conexao estabelecida com sucesso (modo thin).
+
+------------------------------------------------------------------------------
+1) EXECUCAO DO DDL (01_ddl_calcadalivre.sql)
+------------------------------------------------------------------------------
+   135 comandos identificados.
+   DDL executado: 135/135 comandos sem erro.
+
+------------------------------------------------------------------------------
+2) EXECUCAO DO DML (02_dml_calcadalivre.sql)
+------------------------------------------------------------------------------
+   118 comandos identificados.
+   DML executado: 118/118 comandos sem erro (commit efetuado).
+
+------------------------------------------------------------------------------
+3) CONTAGEM DE LINHAS DAS 14 TABELAS
+------------------------------------------------------------------------------
+   CL_CIDADE                = 5
+   CL_BAIRRO                = 6
+   CL_TIPO_VIA              = 5
+   CL_PONTO                 = 11
+   CL_TRECHO                = 14
+   CL_PERFIL_MOBILIDADE     = 5
+   CL_USUARIO               = 6
+   CL_TIPO_BARREIRA         = 6
+   CL_REGISTRO_BARREIRA     = 8
+   CL_AVALIACAO_TRECHO      = 6
+   CL_CONSULTA_ROTA         = 5
+   CL_CONSULTA_TRECHO       = 26
+   CL_EQUIPAMENTO           = 6
+   CL_REFORMA               = 8
+
+------------------------------------------------------------------------------
+4) EXECUCAO DAS 3 CONSULTAS DQL (03_dql_calcadalivre.sql)
+------------------------------------------------------------------------------
+
+   >>> CONSULTA 1 <<<
+ID_REGISTRO | DATA_REGISTRO | TIPO_BARREIRA | GRAVIDADE | STATUS | DESCRICAO
+----------------------------------------------------------------------------
+7 | 2026-11-05 15:55 | BURACO | 4 | EM_ANALISE | Buraco se abriu novamente apos a chuva.
+6 | 2026-11-02 10:00 | OUTRO | 1 | RECUSADO | Registro duplicado, ja resolvido.
+5 | 2026-11-01 08:30 | SEM_RAMPA | 5 | ABERTO | Falta rampa na esquina da Rua Baruel.
+3 | 2026-10-30 17:40 | POSTE_NO_MEIO | 4 | ABERTO | Poste no meio da calcada estreita.
+2 | 2026-10-29 09:05 | DEGRAU | 5 | EM_ANALISE | Degrau sem rampa na entrada da Rua Professor Roberto David.
+1 | 2026-10-28 14:20 | BURACO | 4 | ABERTO | Buraco profundo em frente a loja de roupas.
+4 | 2026-10-22 12:10 | PISO_QUEBRADO | 3 | RESOLVIDO | Piso quebrado reparado pela prefeitura.
+8 | 2026-10-15 11:20 | POSTE_NO_MEIO | 2 | RESOLVIDO | Poste realocado para o canteiro.
+   (8 linha(s) retornada(s))
+
+   >>> CONSULTA 2 <<<
+TIPO_DE_VIA | QTD_TRECHOS | INDICE_MEDIO | INDICE_MINIMO | INDICE_MAXIMO
+------------------------------------------------------------------------
+LOCAL | 8 | 49.4 | 35 | 80
+ARTERIAL | 2 | 81 | 71 | 91
+COLETORA | 3 | 83 | 77 | 93
+   (3 linha(s) retornada(s))
+
+   >>> CONSULTA 3 <<<
+ID_TRECHO | RUA | INDICE_ACESSIBILIDADE | ID_REGISTRO
+-----------------------------------------------------
+2 | Rua Prudente de Moraes (saida da estacao) | 93.0 | NULL
+12 | Av. Antonio Marques Figueira (ate a Santa Casa) | 91.0 | NULL
+13 | Rua Professor Roberto David (lado da avenida) | 80.0 | NULL
+10 | Rua Felicio de Camargo | 79.0 | NULL
+14 | Rua Benjamin Constant (ligacao Glicerio -> avenida) | 58.0 | NULL
+7 | Travessa Glicerio -> Marechal Deodoro | 51.0 | NULL
+8 | Travessa Glicerio -> avenida | 47.0 | NULL
+1 | Estacao Suzano (elevador em manutencao: so escada) | 30.0 | NULL
+   (8 linha(s) retornada(s))
+
+------------------------------------------------------------------------------
+5) RESUMO FINAL
+------------------------------------------------------------------------------
+RESULTADO: ZERO ERROS. DDL, DML e DQL executados com sucesso.
+==============================================================================

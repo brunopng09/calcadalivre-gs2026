@@ -1,0 +1,9 @@
+# Normaliza fim de linha no repositório (importante para o mvnw rodar no Linux/Render)
+* text=auto eol=lf
+*.cmd text eol=crlf
+*.bat text eol=crlf
+mvnw text eol=lf
+*.png binary
+*.jpg binary
+*.pdf binary
+*.zip binary

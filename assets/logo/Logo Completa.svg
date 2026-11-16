@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 260" width="100%" height="100%" role="img" aria-label="Logo CalçadaLivre - Tecnologia para pessoas">
+  <defs>
+    <!-- Sombra suave para profundidade no ícone -->
+    <filter id="softShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0B2545" flood-opacity="0.18" />
+    </filter>
+    <!-- Clip do ícone principal -->
+    <clipPath id="iconClip">
+      <rect x="24" y="22" width="216" height="216" rx="48" />
+    </clipPath>
+  </defs>
+
+  <!-- Fundo geral transparente / Card base opcional -->
+  <rect width="920" height="260" rx="24" fill="#FFFFFF" />
+
+  <!-- ==========================================
+       BLOCO DO ÍCONE (ESQUERDA)
+       ========================================== -->
+  <g filter="url(#softShadow)">
+    <!-- Base Azul Calçada Profundo -->
+    <rect x="24" y="22" width="216" height="216" rx="48" fill="#0B2545" />
+
+    <g clip-path="url(#iconClip)">
+      <!-- Brilho sutil de fundo no canto superior -->
+      <circle cx="195" cy="60" r="95" fill="#133B6E" opacity="0.55" />
+
+      <!-- Rampa / Calçada Acessível em Perspectiva (Verde Rota Livre) -->
+      <path d="M 10 245 C 58 205, 88 160, 148 132 L 248 162 L 248 248 Z" fill="#008755" />
+      <path d="M 24 242 C 72 192, 108 148, 165 118 L 222 146 C 156 176, 126 206, 98 242 Z" fill="#00A86B" />
+
+      <!-- Faixa Guia Central de Piso Tátil Direcional (Amarelo Piso Tátil) -->
+      <path d="M 58 236 C 95 194, 128 158, 178 133" fill="none" stroke="#FFB703" stroke-width="8" stroke-linecap="round" stroke-dasharray="16 12" />
+
+      <!-- Pontos de Piso Tátil de Alerta (Esquerda Superior) -->
+      <g fill="#FFB703">
+        <circle cx="58" cy="64" r="5.5" />
+        <circle cx="78" cy="64" r="5.5" />
+        <circle cx="98" cy="64" r="5.5" />
+        <circle cx="58" cy="84" r="5.5" />
+        <circle cx="78" cy="84" r="5.5" />
+        <circle cx="98" cy="84" r="5.5" />
+        <circle cx="58" cy="104" r="5.5" opacity="0.6" />
+        <circle cx="78" cy="104" r="5.5" opacity="0.6" />
+      </g>
+
+      <!-- Borda de Guia Rebaixada (Branca de Alto Contraste) -->
+      <path d="M 22 240 C 70 190, 106 146, 165 118" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" />
+    </g>
+
+    <!-- Pino de Localização (Destino Acessível) -->
+    <g transform="translate(132, 36)">
+      <!-- Halo de pulso de acessibilidade -->
+      <circle cx="38" cy="36" r="34" fill="#FFB703" opacity="0.22" />
+      <!-- Corpo do Pin -->
+      <path d="M 38 4 C 19.2 4, 4 19.2, 4 38 C 4 61.5, 38 92, 38 92 C 38 92, 72 61.5, 72 38 C 72 19.2, 56.8 4, 38 4 Z" fill="#FFFFFF" stroke="#0B2545" stroke-width="4" stroke-linejoin="round" />
+      <!-- Círculo Interno Verde -->
+      <circle cx="38" cy="37" r="21" fill="#00A86B" />
+      <!-- Check de Rota Validada -->
+      <path d="M 28.5 37.5 L 35 44 L 48.5 30.5" fill="none" stroke="#FFFFFF" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+
+    <!-- Borda Externa de Alto Contraste -->
+    <rect x="24" y="22" width="216" height="216" rx="48" fill="none" stroke="#FFB703" stroke-width="4" />
+  </g>
+
+  <!-- ==========================================
+       TIPOGRAFIA & IDENTIDADE (DIREITA)
+       ========================================== -->
+  <g transform="translate(274, 0)">
+    <!-- Badge Superior CitizenTech -->
+    <rect x="0" y="38" width="296" height="34" rx="17" fill="#0B2545" />
+    <circle cx="20" cy="55" r="6" fill="#FFB703" />
+    <text x="36" y="60" font-family="&#39;Plus Jakarta Sans&#39;, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="800" fill="#FFFFFF" letter-spacing="1.8">
+      CITIZENTECH · FIAP GS 2026
+    </text>
+
+    <!-- Nome Principal: CalçadaLivre -->
+    <text x="-2" y="150" font-family="&#39;Atkinson Hyperlegible&#39;, &#39;Plus Jakarta Sans&#39;, &#39;Segoe UI&#39;, Roboto, Arial, sans-serif" font-size="78" font-weight="900" letter-spacing="-1.5">
+      <tspan fill="#0B2545">Calçada</tspan><tspan fill="#00A86B">Livre</tspan>
+    </text>
+
+    <!-- Barra Divisória Inspirada em Piso Tátil Direcional -->
+    <g transform="translate(2, 172)">
+      <rect x="0" y="0" width="84" height="7" rx="3.5" fill="#FFB703" />
+      <rect x="94" y="0" width="84" height="7" rx="3.5" fill="#FFB703" />
+      <rect x="188" y="0" width="36" height="7" rx="3.5" fill="#00A86B" />
+      <circle cx="238" cy="3.5" r="3.5" fill="#0B2545" />
+      <circle cx="252" cy="3.5" r="3.5" fill="#0B2545" />
+    </g>
+
+    <!-- Tagline Oficial do Pitch -->
+    <text x="2" y="212" font-family="&#39;Atkinson Hyperlegible&#39;, &#39;Plus Jakarta Sans&#39;, &#39;Segoe UI&#39;, Roboto, Arial, sans-serif" font-size="22" font-weight="700" fill="#334155" letter-spacing="0.3">
+      Tecnologia para pessoas. <tspan fill="#008755" font-weight="800">Caminhos sem barreiras.</tspan>
+    </text>
+
+    <!-- Tags dos 3 Perfis Beneficiados -->
+    <g transform="translate(2, 224)" font-family="&#39;Plus Jakarta Sans&#39;, &#39;Segoe UI&#39;, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#0B2545">
+      <text x="0" y="14" opacity="0.75">ODS 10 & 11  •  CADEIRA DE RODAS  •  CARRINHO DE BEBÊ  •  IDOSOS</text>
+    </g>
+  </g>
+</svg>
