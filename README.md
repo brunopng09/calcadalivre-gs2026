@@ -122,10 +122,10 @@ O programa executa as 8 funcionalidades e imprime os resultados no terminal.
 |---|---|
 | DDD / Java | `01-java-ddd/CalcadaLivre-DDD.pdf` e `01-java-ddd/calcadalivre/` |
 | Database | `02-database/CalcadaLivre-Database-Design.pdf` |
-| Data Science | `03-data-science/CalcadaLivre_DataScience.ipynb` |
-| Dynamic Programming | `04-dynamic-programming/` e `04-dynamic-programming/README.md` |
+| Data Science | `03-data-science/CalcadaLivre_DataScience.ipynb`, `calcadas_suzano.csv` e `integrantes.txt` |
+| Dynamic Programming | `04-dynamic-programming/` (código + `map.osm`) e `04-dynamic-programming/README.md` |
 | Network | `05-network/` |
-| AR/VR | `06-ar-vr/` |
+| AR/VR | `06-ar-vr/EntregaARVR.pdf` e o vídeo em https://youtu.be/zg2j8Rqs2YM |
 
 ---
 
