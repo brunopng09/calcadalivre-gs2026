@@ -313,10 +313,3 @@ Nenhuma informação pessoal é usada.
 - Os valores de índice e risco vêm de modelos treinados com uma base simulada; quando houver medições de campo, os
   modelos devem ser retreinados e os valores do `dados.py` atualizados.
 
-## Ligação com as outras disciplinas
-
-- **Data Science:** o índice de acessibilidade de cada trecho (custo no Dijkstra) vem da regressão linear; a
-  probabilidade de o trecho ser intransitável (bloqueio para cadeira de rodas) e a gravidade (benefício na mochila)
-  vêm da regressão logística. Os valores são os mesmos do notebook `CalcadaLivre_DataScience.ipynb`.
-- **Java (DDD):** a API expõe trechos, barreiras, validações e rotas.
-- **Agile:** as personas (Seu Antônio, Camila e Dona Neide) correspondem aos perfis `cadeira`, `carrinho` e `idoso`.
