@@ -20,6 +20,7 @@ Entregas do semestre: DDD/Java, Database, Data Science, Dynamic Programming, Net
 | Campo | Preenchimento |
 |---|---|
 | Nome | CalçadaLivre |
+| Link do repositório | https://github.com/brunopng09/calcadalivre-gs2026 |
 | Cidade e bairro | Suzano, SP — da Estação Suzano até a Santa Casa de Suzano |
 | Cidadão beneficiado | Pessoas com deficiência física, idosos e mães e pais com carrinho de bebê |
 | Problema, em uma frase | A Estação Suzano tem acessibilidade precária (o elevador vive em manutenção) e as calçadas até a Santa Casa são irregulares, estreitas ou quebradas, o que impede quem tem mobilidade reduzida de chegar ao atendimento de saúde |
