@@ -2,7 +2,7 @@
 
 Fonte: base sintética criada pelo grupo CalçadaLivre. As faixas de valores seguem a NBR 9050:2020
 (faixa livre mínima de 1,20 m na calçada) e o que foi observado no trajeto (calçadas estreitas,
-ocupadas pelo comércio e com piso quebrado). Não contém dados pessoais.
+ocupadas pelo comércio e com piso quebrado). Os nomes das ruas seguem o OpenStreetMap. Não contém dados pessoais.
 
 Uso: python gerar_base.py  ->  gera calcadas_suzano.csv
 """
@@ -15,17 +15,17 @@ N = 640
 # Ruas do entorno: cada rua tem uma largura de calçada típica diferente.
 # (rua, bairro, tipo_via, largura total média em m, peso na amostra)
 RUAS = [
-    ("Rua Prudente de Moraes",             "Centro",              "coletora", 2.00, 0.08),
+    ("Rua Doutor Prudente de Moraes",      "Centro",              "coletora", 2.00, 0.08),
     ("Rua Marechal Deodoro",               "Centro",              "coletora", 1.70, 0.07),
     ("Rua Felício de Camargo",             "Centro",              "coletora", 2.00, 0.07),
     ("Rua General Francisco Glicério",     "Centro",              "local",    1.30, 0.09),
     ("Rua Benjamin Constant",              "Centro",              "local",    1.50, 0.06),
-    ("Av. Antônio Marques Figueira",       "Vila Figueira",       "arterial", 2.40, 0.10),
+    ("Avenida Antônio Marques Figueira",   "Vila Figueira",       "arterial", 1.35, 0.10),
     ("Rua Baruel",                         "Vila Figueira",       "local",    1.20, 0.06),
     ("Rua Professor Roberto David",        "Vila Figueira",       "local",    1.50, 0.05),
-    ("Av. Armando Salles de Oliveira",     "Parque Suzano",       "arterial", 2.60, 0.08),
-    ("Rua Sete de Setembro",               "Parque Suzano",       "coletora", 1.90, 0.06),
-    ("Av. Paulo Portela",                  "Jardim Paulista",     "arterial", 2.50, 0.06),
+    ("Avenida Armando Salles de Oliveira",     "Parque Suzano",       "arterial", 2.60, 0.08),
+    ("Rua Kaneji Kodama",                  "Vila Costa",          "coletora", 1.90, 0.06),
+    ("Avenida Paulo Portela",              "Jardim Paulista",     "arterial", 2.50, 0.06),
     ("Rua Rui Barbosa",                    "Vila Costa",          "local",    1.40, 0.06),
     ("Rua Tiradentes",                     "Vila Costa",          "local",    1.50, 0.05),
     ("Rua Nove de Julho",                  "Jardim Santa Helena", "local",    1.50, 0.06),

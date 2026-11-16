@@ -1,0 +1,11 @@
+CalçadaLivre - Global Solution 2026.2 - Data Science & Statistical Computing
+Engenharia de Software - FIAP
+
+RM562159 - Bruno Costa Scuciato
+RM566222 - Luiz Fernando Balbino
+RM561613 - Gustavo Torres Caldeira
+
+Base de dados: calcadas_suzano.csv
+Fonte: base simulada (sintética) gerada pelo grupo com o script gerar_base.py, com parâmetros baseados
+na ABNT NBR 9050:2020 e nas condições observadas no trajeto Estação Suzano (CPTM) -> Santa Casa de Suzano.
+Cada rua tem uma largura de calçada típica diferente.
