@@ -1,0 +1,20 @@
+﻿CalçadaLivre — Global Solution 2026.2 — DDD / Java
+
+Integrantes
+RM562159  Bruno Costa Scuciato
+RM561613  Gustavo Torres Caldeira
+RM566222  Luiz Fernando Balbino
+
+Repositório GitHub
+https://github.com/brunopng09/calcadalivre-gs2026
+
+Código da aplicação (Java 21 + Spring Boot + JDBC + Oracle)
+https://github.com/brunopng09/calcadalivre-gs2026/tree/main/01-java-ddd/calcadalivre
+
+Documentação técnica (PDF)
+https://github.com/brunopng09/calcadalivre-gs2026/blob/main/01-java-ddd/CalcadaLivre-DDD.pdf
+
+Deploy no Render (em publicação)
+https://calcadalivre.onrender.com
+(serviço publicado a partir do Dockerfile e do render.yaml em 01-java-ddd/calcadalivre;
+ credenciais Oracle cadastradas como variáveis secretas no painel do Render)

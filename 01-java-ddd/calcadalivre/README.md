@@ -1,4 +1,4 @@
-# CalçadaLivre
+﻿# CalçadaLivre
 
 Sistema que mapeia trechos de calçada, registra barreiras de acessibilidade e calcula a
 prioridade de manutenção a partir do índice de acessibilidade e do tipo de via.
@@ -75,7 +75,7 @@ src/main/java/br/com/fiap/
 Pré-requisitos: **Java 21+** (o wrapper do Maven já está no repositório). No PowerShell:
 
 ```powershell
-cd java\calcadalivre
+cd 01-java-ddd\calcadalivre
 
 $env:DB_USUARIO="SEU_USUARIO_FIAP"
 $env:DB_SENHA="SUA_SENHA_FIAP"
@@ -97,14 +97,14 @@ java -jar target/calcadalivre-0.0.1-SNAPSHOT.jar
 
 ## Como criar o banco
 
-Os scripts SQL estão em `deliverables/database` e devem ser executados **nesta ordem**, no
+Os scripts SQL estão em `02-database` e devem ser executados **nesta ordem**, no
 schema do usuário FIAP (SQL Developer, VS Code + extensão Oracle ou similar):
 
 | Ordem | Script | Conteúdo |
 |-------|--------|----------|
-| 1 | `deliverables/database/01_ddl_calcadalivre.sql` | cria as 14 tabelas `CL_*`, constraints e índices (idempotente) |
-| 2 | `deliverables/database/02_dml_calcadalivre.sql` | carga de dados de exemplo para demonstração |
-| 3 | `deliverables/database/03_dql_calcadalivre.sql` | consultas de verificação e relatórios |
+| 1 | `02-database/01_ddl_calcadalivre.sql` | cria as 14 tabelas `CL_*`, constraints e índices (idempotente) |
+| 2 | `02-database/02_dml_calcadalivre.sql` | carga de dados de exemplo para demonstração |
+| 3 | `02-database/03_dql_calcadalivre.sql` | consultas de verificação e relatórios |
 
 ## Endpoints da API REST
 
@@ -176,10 +176,10 @@ superfície `#F8FAFC`).
 
 ## Deploy no Render
 
-1. Suba o projeto para o GitHub (repositório com a pasta `java/calcadalivre`).
+1. Suba o projeto para o GitHub (repositório; o projeto está na pasta `01-java-ddd/calcadalivre`).
 2. No painel do Render, escolha **New → Web Service**.
 3. Conecte o repositório e selecione o runtime **Docker**.
-4. Configure **Root Directory** como `java/calcadalivre` e **Dockerfile Path** como
+4. Configure **Root Directory** como `01-java-ddd/calcadalivre` e **Dockerfile Path** como
    `./Dockerfile`.
 5. Em **Environment**, cadastre as variáveis:
    - `DB_USUARIO` — usuário do schema Oracle FIAP;
@@ -187,8 +187,8 @@ superfície `#F8FAFC`).
 6. Confirme o **Health Check Path** como `/` e faça o deploy. O Render injeta a porta em
    `PORT`, já lida por `server.port=${PORT:8080}`.
 
-O arquivo `render.yaml` na raiz do projeto descreve o mesmo serviço e pode ser usado com
+O arquivo `render.yaml` na pasta `01-java-ddd/calcadalivre` descreve o mesmo serviço e pode ser usado com
 **New → Blueprint** (as credenciais ficam com `sync: false`, ou seja, são informadas no
 painel).
 
-Repositório (placeholder): <https://github.com/fiap-gs2026-2/calcadalivre>
+Repositório: <https://github.com/brunopng09/calcadalivre-gs2026>

@@ -1,4 +1,4 @@
-# CalçadaLivre — Global Solution 2026.2
+﻿# CalçadaLivre — Global Solution 2026.2
 
 **FIAP · Engenharia de Software · 2026.2**
 Entregas do semestre: DDD/Java, Database, Data Science, Dynamic Programming, Network e AR/VR.
@@ -124,17 +124,18 @@ O programa executa as 8 funcionalidades e imprime os resultados no terminal.
 | Database | `02-database/CalcadaLivre-Database-Design.pdf` |
 | Data Science | `03-data-science/CalcadaLivre_DataScience.ipynb`, `calcadas_suzano.csv` e `integrantes.txt` |
 | Dynamic Programming | `04-dynamic-programming/` (código + `map.osm`) e `04-dynamic-programming/README.md` |
-| Network | `05-network/` |
+| Network | `05-network/` (arquivo da entrega enviado no Portal) |
 | AR/VR | `06-ar-vr/EntregaARVR.pdf` e o vídeo em https://youtu.be/zg2j8Rqs2YM |
 
 ---
 
 ## Deploy
 
-Aplicação Java publicada no Render: <!-- preencher após o deploy -->
-`https://calcadalivre.onrender.com`
+Aplicação Java pronta para publicação no Render: o `Dockerfile` e o `render.yaml` estão em
+`01-java-ddd/calcadalivre/` (build Java 21 + porta via `PORT`). As variáveis `DB_USUARIO` e `DB_SENHA`
+são cadastradas no painel do Render como secretas.
 
-Variáveis de ambiente configuradas no painel do Render: `DB_USUARIO` e `DB_SENHA` (marcadas como secretas).
+A URL do serviço publicado é registrada em `01-java-ddd/LINKS.txt`, que acompanha o ZIP do DDD no Portal.
 
 ---
 
