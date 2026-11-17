@@ -131,11 +131,14 @@ O programa executa as 8 funcionalidades e imprime os resultados no terminal.
 
 ## Deploy
 
-Aplicação Java pronta para publicação no Render: o `Dockerfile` e o `render.yaml` estão em
-`01-java-ddd/calcadalivre/` (build Java 21 + porta via `PORT`). As variáveis `DB_USUARIO` e `DB_SENHA`
-são cadastradas no painel do Render como secretas.
+Aplicação Java publicada no Render: **https://calcadalivre.onrender.com** (deploy em 16/11/2026 a partir
+do `Dockerfile` e do `render.yaml` em `01-java-ddd/calcadalivre/`, build Java 21 e porta via `PORT`).
+Variáveis `DB_USUARIO` e `DB_SENHA` cadastradas como secretas no painel do Render. No plano Free o serviço
+hiberna após ~15 min sem acesso — a primeira visita demora ~30 s.
 
-A URL do serviço publicado é registrada em `01-java-ddd/LINKS.txt`, que acompanha o ZIP do DDD no Portal.
+Validado no serviço publicado: `/` e `/trechos` respondem 200 com os dados vindos do Oracle FIAP e
+`/api/trechos` devolve os 14 trechos da carga DML. Os links também estão em `01-java-ddd/LINKS.txt`,
+que acompanha o ZIP do DDD no Portal.
 
 ---
 

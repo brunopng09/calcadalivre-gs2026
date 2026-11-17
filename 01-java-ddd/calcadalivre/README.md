@@ -187,6 +187,9 @@ superfície `#F8FAFC`).
 6. Confirme o **Health Check Path** como `/` e faça o deploy. O Render injeta a porta em
    `PORT`, já lida por `server.port=${PORT:8080}`.
 
+Serviço publicado: <https://calcadalivre.onrender.com> (deploy em 16/11/2026). No plano Free ele hiberna
+após ~15 min sem acesso.
+
 O arquivo `render.yaml` na pasta `01-java-ddd/calcadalivre` descreve o mesmo serviço e pode ser usado com
 **New → Blueprint** (as credenciais ficam com `sync: false`, ou seja, são informadas no
 painel).

@@ -14,7 +14,7 @@ https://github.com/brunopng09/calcadalivre-gs2026/tree/main/01-java-ddd/calcadal
 Documentação técnica (PDF)
 https://github.com/brunopng09/calcadalivre-gs2026/blob/main/01-java-ddd/CalcadaLivre-DDD.pdf
 
-Deploy no Render (em publicação)
+Deploy no Render (publicado em 16/11/2026)
 https://calcadalivre.onrender.com
 (serviço publicado a partir do Dockerfile e do render.yaml em 01-java-ddd/calcadalivre;
  credenciais Oracle cadastradas como variáveis secretas no painel do Render)
