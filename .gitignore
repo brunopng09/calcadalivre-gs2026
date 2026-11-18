@@ -4,6 +4,9 @@ target/
 *.jar
 *.war
 
+# Claude
+.Claude
+.env
 # IDE
 .idea/
 *.iml

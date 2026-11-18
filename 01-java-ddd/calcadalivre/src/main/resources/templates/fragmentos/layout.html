@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="cabecalho(titulo)">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="'CalçadaLivre — ' + ${titulo}">CalçadaLivre</title>
+    <link rel="icon" type="image/svg+xml" th:href="@{/img/logo-redonda.svg}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@600;700&display=swap">
+    <link rel="stylesheet" th:href="@{/css/estilo.css}">
+    <script>
+        try { if (localStorage.getItem('cl-letras-grandes') === '1') document.documentElement.classList.add('lg-mode'); } catch (e) {}
+    </script>
+</head>
+<body>
+
+<header class="topo" th:fragment="topo(titulo, subtitulo)">
+    <div class="container topo-conteudo">
+        <img class="topo-logo" th:src="@{/img/logo-quadrada.svg}" alt="Ícone CalçadaLivre" width="56" height="56">
+        <div class="topo-textos">
+            <p class="marca">CitizenTech · FIAP GS 2026.2</p>
+            <p class="topo-nome">Calçada<span>Livre</span></p>
+        </div>
+        <button type="button" id="alternarLetras" class="chave" role="switch" aria-checked="false"
+                aria-label="Ativar letras grandes">
+            <span class="chave-rotulo">Letras grandes</span>
+            <span class="chave-trilho"><span class="chave-bolinha"></span></span>
+        </button>
+    </div>
+    <div class="container">
+        <h1 th:text="${titulo}">Título</h1>
+        <p class="subtitulo" th:text="${subtitulo}">Subtítulo</p>
+    </div>
+    <div class="faixa-tatil" aria-hidden="true"></div>
+</header>
+
+<nav class="menu" aria-label="Navegação principal" th:fragment="menu(ativo)">
+    <div class="container">
+        <a class="menu-item" th:classappend="${ativo == 'painel'} ? 'ativo'" th:href="@{/}"
+           th:attr="aria-current=${ativo == 'painel'} ? 'page'">Painel</a>
+        <a class="menu-item" th:classappend="${ativo == 'trechos'} ? 'ativo'" th:href="@{/trechos}"
+           th:attr="aria-current=${ativo == 'trechos'} ? 'page'">Trechos</a>
+        <a class="menu-item" th:classappend="${ativo == 'barreira'} ? 'ativo'" th:href="@{/barreiras/nova}"
+           th:attr="aria-current=${ativo == 'barreira'} ? 'page'">Nova barreira</a>
+    </div>
+</nav>
+
+<footer class="rodape" th:fragment="rodape">
+    <div class="container">
+        <p>CalçadaLivre — Tecnologia para pessoas. <strong>Caminhos sem barreiras.</strong></p>
+        <p class="rodape-pequeno">FIAP Global Solution 2026.2 · Disciplina DDD · ODS 10 e 11</p>
+    </div>
+    <script>
+        (function () {
+            var b = document.getElementById('alternarLetras');
+            if (!b) return;
+            var raiz = document.documentElement;
+            function aplicar(on) {
+                raiz.classList.toggle('lg-mode', on);
+                b.setAttribute('aria-checked', on ? 'true' : 'false');
+            }
+            aplicar(raiz.classList.contains('lg-mode'));
+            b.addEventListener('click', function () {
+                var on = !raiz.classList.contains('lg-mode');
+                aplicar(on);
+                try { localStorage.setItem('cl-letras-grandes', on ? '1' : '0'); } catch (e) {}
+            });
+        })();
+    </script>
+</footer>
+
+</body>
+</html>

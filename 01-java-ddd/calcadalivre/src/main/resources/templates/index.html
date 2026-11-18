@@ -1,38 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CalçadaLivre — Painel</title>
-    <link rel="stylesheet" th:href="@{/css/estilo.css}">
-</head>
+<head th:replace="~{fragmentos/layout :: cabecalho('Painel')}"></head>
 <body>
-<header class="topo">
-    <div class="container">
-        <p class="marca">CalçadaLivre</p>
-        <h1>Painel de acessibilidade das calçadas</h1>
-        <p class="subtitulo">Trechos mapeados, barreiras reportadas e prioridade de manutenção por tipo de via.</p>
-    </div>
-</header>
-
-<nav class="menu">
-    <div class="container">
-        <a class="menu-item ativo" th:href="@{/}">Painel</a>
-        <a class="menu-item" th:href="@{/trechos}">Trechos</a>
-        <a class="menu-item" th:href="@{/barreiras/nova}">Nova barreira</a>
-    </div>
-</nav>
+<header th:replace="~{fragmentos/layout :: topo('Painel de acessibilidade das calçadas', 'Trechos mapeados, barreiras reportadas e prioridade de manutenção por tipo de via.')}"></header>
+<nav th:replace="~{fragmentos/layout :: menu('painel')}"></nav>
 
 <main class="container">
-    <div class="alerta alerta-sucesso" th:if="${sucesso}" th:text="${sucesso}"></div>
-    <div class="alerta alerta-erro" th:if="${erro}" th:text="${erro}"></div>
+    <div class="alerta alerta-sucesso" role="status" th:if="${sucesso}" th:text="${sucesso}"></div>
+    <div class="alerta alerta-erro" role="alert" th:if="${erro}" th:text="${erro}"></div>
 
-    <section class="indicadores">
-        <article class="cartao">
+    <section class="indicadores" aria-label="Indicadores">
+        <article class="cartao cartao-rota">
             <span class="rotulo">Trechos mapeados</span>
             <strong th:text="${totalTrechos}">0</strong>
         </article>
-        <article class="cartao">
+        <article class="cartao cartao-barreira">
             <span class="rotulo">Barreiras registradas</span>
             <strong th:text="${totalBarreiras}">0</strong>
         </article>
@@ -51,11 +33,23 @@
                 <div class="item-info">
                     <span class="item-titulo" th:text="${t.nmRua}">Rua</span>
                     <span class="item-detalhe">
-                        Índice de acessibilidade:
-                        <strong th:text="${#numbers.formatDecimal(t.nrIndiceAcessibilidade, 1, 1)}">0,0</strong>
+                        Índice de acessibilidade
+                        <span class="indice"
+                              th:classappend="${t.nrIndiceAcessibilidade >= 7 ? 'indice-bom' :
+                                              (t.nrIndiceAcessibilidade >= 4 ? 'indice-medio' : 'indice-ruim')}">
+                            <span th:text="${t.nrIndiceAcessibilidade >= 7 ? '✓' :
+                                            (t.nrIndiceAcessibilidade >= 4 ? '!' : '✕')}" aria-hidden="true">✓</span>
+                            <span th:text="${#numbers.formatDecimal(t.nrIndiceAcessibilidade, 1, 1)}">0,0</span>
+                        </span>
+                    </span>
+                    <span class="indice-barra" aria-hidden="true">
+                        <span th:classappend="${t.nrIndiceAcessibilidade >= 7 ? 'bom' :
+                                               (t.nrIndiceAcessibilidade >= 4 ? 'medio' : 'ruim')}"
+                              th:style="'width:' + ${#numbers.formatDecimal(t.nrIndiceAcessibilidade * 10, 1, 0, 'POINT')} + '%'"></span>
                     </span>
                 </div>
                 <span class="etiqueta"
+                      th:classappend="${barreirasPorTrecho.getOrDefault(t.idTrecho, 0) > 0} ? 'etiqueta-alerta' : 'etiqueta-ok'"
                       th:text="${barreirasPorTrecho.getOrDefault(t.idTrecho, 0)} + ' barreira(s)'">0 barreira(s)</span>
             </li>
         </ul>
@@ -64,10 +58,6 @@
     </section>
 </main>
 
-<footer class="rodape">
-    <div class="container">
-        <p>CalçadaLivre — FIAP Global Solution 2026.2 · Disciplina DDD</p>
-    </div>
-</footer>
+<footer th:replace="~{fragmentos/layout :: rodape}"></footer>
 </body>
 </html>

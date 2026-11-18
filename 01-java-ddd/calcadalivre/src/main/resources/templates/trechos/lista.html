@@ -1,31 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CalçadaLivre — Trechos</title>
-    <link rel="stylesheet" th:href="@{/css/estilo.css}">
-</head>
+<head th:replace="~{fragmentos/layout :: cabecalho('Trechos')}"></head>
 <body>
-<header class="topo">
-    <div class="container">
-        <p class="marca">CalçadaLivre</p>
-        <h1>Trechos de calçada</h1>
-        <p class="subtitulo">Larguras, inclinação e índice de acessibilidade de cada trecho monitorado.</p>
-    </div>
-</header>
-
-<nav class="menu">
-    <div class="container">
-        <a class="menu-item" th:href="@{/}">Painel</a>
-        <a class="menu-item ativo" th:href="@{/trechos}">Trechos</a>
-        <a class="menu-item" th:href="@{/barreiras/nova}">Nova barreira</a>
-    </div>
-</nav>
+<header th:replace="~{fragmentos/layout :: topo('Trechos de calçada', 'Larguras, inclinação e índice de acessibilidade de cada trecho monitorado.')}"></header>
+<nav th:replace="~{fragmentos/layout :: menu('trechos')}"></nav>
 
 <main class="container">
-    <div class="alerta alerta-sucesso" th:if="${sucesso}" th:text="${sucesso}"></div>
-    <div class="alerta alerta-erro" th:if="${erro}" th:text="${erro}"></div>
+    <div class="alerta alerta-sucesso" role="status" th:if="${sucesso}" th:text="${sucesso}"></div>
+    <div class="alerta alerta-erro" role="alert" th:if="${erro}" th:text="${erro}"></div>
 
     <p class="vazio" th:if="${#lists.isEmpty(trechos)}">Nenhum trecho cadastrado no momento.</p>
 
@@ -33,37 +15,40 @@
         <table class="tabela">
             <thead>
             <tr>
-                <th>Rua</th>
-                <th>Comprimento</th>
-                <th>Largura livre</th>
-                <th>Inclinação</th>
-                <th>Índice</th>
-                <th>Barreiras</th>
+                <th scope="col">Rua</th>
+                <th scope="col">Comprimento</th>
+                <th scope="col">Largura livre</th>
+                <th scope="col">Inclinação</th>
+                <th scope="col">Índice</th>
+                <th scope="col">Barreiras</th>
             </tr>
             </thead>
             <tbody>
             <tr th:each="t : ${trechos}">
                 <td th:text="${t.nmRua}">Rua</td>
-                <td th:text="${t.nrComprimentoM} + ' m'">0 m</td>
-                <td th:text="${#numbers.formatDecimal(t.nrLarguraLivreM, 1, 2)} + ' m'">0,00 m</td>
-                <td th:text="${#numbers.formatDecimal(t.nrInclinacaoPct, 1, 1)} + '%'">0,0%</td>
+                <td class="num" th:text="${t.nrComprimentoM} + ' m'">0 m</td>
+                <td class="num" th:text="${#numbers.formatDecimal(t.nrLarguraLivreM, 1, 2)} + ' m'">0,00 m</td>
+                <td class="num" th:text="${#numbers.formatDecimal(t.nrInclinacaoPct, 1, 1)} + '%'">0,0%</td>
                 <td>
                     <span class="indice"
                           th:classappend="${t.nrIndiceAcessibilidade >= 7 ? 'indice-bom' :
-                                          (t.nrIndiceAcessibilidade >= 4 ? 'indice-medio' : 'indice-ruim')}"
-                          th:text="${#numbers.formatDecimal(t.nrIndiceAcessibilidade, 1, 1)}">0,0</span>
+                                          (t.nrIndiceAcessibilidade >= 4 ? 'indice-medio' : 'indice-ruim')}">
+                        <span th:text="${t.nrIndiceAcessibilidade >= 7 ? '✓' :
+                                        (t.nrIndiceAcessibilidade >= 4 ? '!' : '✕')}" aria-hidden="true">✓</span>
+                        <span th:text="${#numbers.formatDecimal(t.nrIndiceAcessibilidade, 1, 1)}">0,0</span>
+                    </span>
                 </td>
-                <td th:text="${barreirasPorTrecho.getOrDefault(t.idTrecho, 0)}">0</td>
+                <td>
+                    <span class="etiqueta"
+                          th:classappend="${barreirasPorTrecho.getOrDefault(t.idTrecho, 0) > 0} ? 'etiqueta-alerta' : 'etiqueta-ok'"
+                          th:text="${barreirasPorTrecho.getOrDefault(t.idTrecho, 0)}">0</span>
+                </td>
             </tr>
             </tbody>
         </table>
     </div>
 </main>
 
-<footer class="rodape">
-    <div class="container">
-        <p>CalçadaLivre — FIAP Global Solution 2026.2 · Disciplina DDD</p>
-    </div>
-</footer>
+<footer th:replace="~{fragmentos/layout :: rodape}"></footer>
 </body>
 </html>
