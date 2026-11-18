@@ -1,31 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CalçadaLivre — Nova barreira</title>
-    <link rel="stylesheet" th:href="@{/css/estilo.css}">
-</head>
+<head th:replace="~{fragmentos/layout :: cabecalho('Nova barreira')}"></head>
 <body>
-<header class="topo">
-    <div class="container">
-        <p class="marca">CalçadaLivre</p>
-        <h1>Reportar barreira</h1>
-        <p class="subtitulo">Informe o trecho, o tipo de barreira e a gravidade observada na calçada.</p>
-    </div>
-</header>
-
-<nav class="menu">
-    <div class="container">
-        <a class="menu-item" th:href="@{/}">Painel</a>
-        <a class="menu-item" th:href="@{/trechos}">Trechos</a>
-        <a class="menu-item ativo" th:href="@{/barreiras/nova}">Nova barreira</a>
-    </div>
-</nav>
+<header th:replace="~{fragmentos/layout :: topo('Registrar barreira', 'Informe o trecho, o tipo de barreira e a gravidade observada. Leva menos de 30 segundos.')}"></header>
+<nav th:replace="~{fragmentos/layout :: menu('barreira')}"></nav>
 
 <main class="container">
-    <div class="alerta alerta-erro" th:if="${erro}" th:text="${erro}"></div>
-    <div class="alerta alerta-sucesso" th:if="${sucesso}" th:text="${sucesso}"></div>
+    <div class="alerta alerta-erro" role="alert" th:if="${erro}" th:text="${erro}"></div>
+    <div class="alerta alerta-sucesso" role="status" th:if="${sucesso}" th:text="${sucesso}"></div>
 
     <form class="formulario" th:action="@{/barreiras/salvar}" method="post">
         <div class="campo">
@@ -38,18 +20,36 @@
             </select>
         </div>
 
-        <div class="campo">
-            <label for="idTipoBarreira">Tipo de barreira</label>
-            <select id="idTipoBarreira" name="idTipoBarreira" required>
-                <option th:each="tipo : ${tipos}"
-                        th:value="${tipo.idTipoBarreira}"
-                        th:text="${tipo.dsTipoBarreira}"
-                        th:selected="${registroBarreira.idTipoBarreira == tipo.idTipoBarreira}">Tipo</option>
-            </select>
-        </div>
+        <fieldset class="passo">
+            <legend><span class="passo-num" aria-hidden="true">1</span>Qual é a barreira?</legend>
+            <div class="opcoes opcoes-tipo">
+                <label class="opcao" th:each="tipo : ${tipos}">
+                    <input type="radio" name="idTipoBarreira" required
+                           th:value="${tipo.idTipoBarreira}"
+                           th:checked="${registroBarreira.idTipoBarreira == tipo.idTipoBarreira
+                                         or (registroBarreira.idTipoBarreira == 0 and tipoStat.first)}">
+                    <span class="opcao-visual" th:classappend="${tipo.nrGravidadeBase >= 4} ? 'grave'">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17v.5"/></svg>
+                        <span th:text="${tipo.dsTipoBarreira}">Tipo</span>
+                    </span>
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset class="passo">
+            <legend><span class="passo-num" aria-hidden="true">2</span>Gravidade</legend>
+            <div class="opcoes opcoes-gravidade">
+                <label class="opcao" th:each="g : ${#numbers.sequence(1, 5)}">
+                    <input type="radio" name="nrGravidade" required th:value="${g}"
+                           th:checked="${(registroBarreira.nrGravidade == 0 ? 3 : registroBarreira.nrGravidade) == g}">
+                    <span class="opcao-visual opcao-grav" th:text="${g}">1</span>
+                </label>
+            </div>
+            <div class="escala"><span>1 · incômodo</span><span>5 · intransitável</span></div>
+        </fieldset>
 
         <div class="campo">
-            <label for="idUsuario">Usuário</label>
+            <label for="idUsuario"><span class="passo-num" aria-hidden="true">3</span>Quem está registrando?</label>
             <select id="idUsuario" name="idUsuario" required>
                 <option th:each="u : ${usuarios}"
                         th:value="${u.idUsuario}"
@@ -59,12 +59,7 @@
         </div>
 
         <div class="campo">
-            <label for="nrGravidade">Gravidade (1 a 5)</label>
-            <input id="nrGravidade" name="nrGravidade" type="number" min="1" max="5" step="1" value="3" required>
-        </div>
-
-        <div class="campo">
-            <label for="dsRegistro">Descrição da barreira</label>
+            <label for="dsRegistro">Descrição <span class="opcional">(opcional)</span></label>
             <textarea id="dsRegistro" name="dsRegistro" rows="4"
                       placeholder="Ex.: bueiro sem tampa ocupando metade da calçada"
                       th:text="${registroBarreira.dsRegistro}"></textarea>
@@ -72,26 +67,22 @@
 
         <div class="campo-duplo">
             <div class="campo">
-                <label for="nrLatitude">Latitude (opcional)</label>
+                <label for="nrLatitude">Latitude <span class="opcional">(opcional)</span></label>
                 <input id="nrLatitude" name="nrLatitude" type="number" step="any" placeholder="-23.5505">
             </div>
             <div class="campo">
-                <label for="nrLongitude">Longitude (opcional)</label>
+                <label for="nrLongitude">Longitude <span class="opcional">(opcional)</span></label>
                 <input id="nrLongitude" name="nrLongitude" type="number" step="any" placeholder="-46.6333">
             </div>
         </div>
 
         <div class="acoes">
-            <button class="botao botao-primario" type="submit">Salvar barreira</button>
+            <button class="botao botao-primario" type="submit">Enviar alerta para a comunidade</button>
             <a class="botao botao-neutro" th:href="@{/}">Cancelar</a>
         </div>
     </form>
 </main>
 
-<footer class="rodape">
-    <div class="container">
-        <p>CalçadaLivre — FIAP Global Solution 2026.2 · Disciplina DDD</p>
-    </div>
-</footer>
+<footer th:replace="~{fragmentos/layout :: rodape}"></footer>
 </body>
 </html>
