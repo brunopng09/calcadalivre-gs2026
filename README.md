@@ -1,7 +1,7 @@
-﻿# CalçadaLivre — Global Solution 2026.2
+# CalçadaLivre — Global Solution 2026.2
 
 **FIAP · Engenharia de Software · 2026.2**
-Entregas do semestre: DDD/Java, Database, Data Science, Dynamic Programming, Network e AR/VR.
+Entregas do semestre: DDD/Java, Database, Data Science, Dynamic Programming, Network, AR/VR e Agile (Fase 1).
 
 ---
 
@@ -54,8 +54,9 @@ livre, piso, inclinação, degrau e ocupação.
 ├── 02-database/              DDL, DML, DQL e PDF do modelo de dados (Oracle)
 ├── 03-data-science/          notebook, base sintética e gerador da base
 ├── 04-dynamic-programming/   grafo, Dijkstra, Floyd-Warshall, memoização e mochila 0/1
-├── 05-network/               entrega de Network (Packet Tracer)
+├── 05-network/               topologia e documentação de Network (Packet Tracer + PDF)
 ├── 06-ar-vr/                 entrega de AR/VR (vídeo e PDF)
+├── 07-agile/                 entrega de Agile Fase 1 (personas, casos de uso, backlog e pitch)
 ├── assets/                   identidade visual (paleta, tipografia, logos)
 └── prompts.md                registro do uso de IA como copiloto
 ```
@@ -124,8 +125,9 @@ O programa executa as 8 funcionalidades e imprime os resultados no terminal.
 | Database | `02-database/CalcadaLivre-Database-Design.pdf` |
 | Data Science | `03-data-science/CalcadaLivre_DataScience.ipynb`, `calcadas_suzano.csv` e `integrantes.txt` |
 | Dynamic Programming | `04-dynamic-programming/` (código + `map.osm`) e `04-dynamic-programming/README.md` |
-| Network | `05-network/` (arquivo da entrega enviado no Portal) |
+| Network | `05-network/CalcadaLivre-Network.pkt` e `05-network/CalcadaLivre-Network-Architecture.pdf` |
 | AR/VR | `06-ar-vr/EntregaARVR.pdf` e o vídeo em https://youtu.be/zg2j8Rqs2YM |
+| Agile (Fase 1) | `07-agile/CalcadaLivre_Fase1_Agile_GS2026.pdf` e o vídeo pitch em https://youtu.be/ddkoEs_-IxM |
 
 ---
 
