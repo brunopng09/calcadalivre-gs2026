@@ -1,10 +1,14 @@
 package br.com.fiap.controller;
 
 import br.com.fiap.bo.RegistroBarreiraBO;
+import br.com.fiap.contingencia.DadosContingencia;
 import br.com.fiap.entities.RegistroBarreira;
 import br.com.fiap.entities.TipoBarreira;
+import br.com.fiap.excecoes.PersistenciaException;
 import br.com.fiap.excecoes.RecursoNaoEncontradoException;
 import br.com.fiap.excecoes.RegraNegocioException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -29,6 +33,8 @@ import java.util.List;
 @RequestMapping(value = "/api/barreiras", produces = MediaType.APPLICATION_JSON_VALUE)
 public class BarreiraController {
 
+    private static final Logger LOG = LoggerFactory.getLogger(BarreiraController.class);
+
     private final RegistroBarreiraBO registroBarreiraBO = new RegistroBarreiraBO();
 
     @GetMapping
@@ -38,7 +44,14 @@ public class BarreiraController {
 
     @GetMapping("/tipos")
     public ResponseEntity<List<TipoBarreira>> listarTipos() {
-        return ResponseEntity.ok(registroBarreiraBO.listarTipos());
+        try {
+            return ResponseEntity.ok(registroBarreiraBO.listarTipos());
+        } catch (PersistenciaException e) {
+            LOG.warn("Falha ao listar tipos de barreira na API; servindo snapshot de contingência", e);
+            return ResponseEntity.ok()
+                    .header(DadosContingencia.CABECALHO_DADOS_DE_CACHE, "true")
+                    .body(DadosContingencia.tiposBarreira());
+        }
     }
 
     @GetMapping("/trecho/{idTrecho}")

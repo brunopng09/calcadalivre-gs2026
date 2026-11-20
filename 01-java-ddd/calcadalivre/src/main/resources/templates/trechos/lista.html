@@ -9,6 +9,11 @@
     <div class="alerta alerta-sucesso" role="status" th:if="${sucesso}" th:text="${sucesso}"></div>
     <div class="alerta alerta-erro" role="alert" th:if="${erro}" th:text="${erro}"></div>
 
+    <div class="alerta alerta-erro" role="alert" th:if="${dadosDeCache}">
+        <strong>Modo contingência: dados de cache.</strong>
+        <span th:text="${avisoCache}">Banco Oracle da FIAP indisponível (conta bloqueada, ORA-28000). Os dados abaixo são os últimos sincronizados, em 16/11/2026.</span>
+    </div>
+
     <p class="vazio" th:if="${#lists.isEmpty(trechos)}">Nenhum trecho cadastrado no momento.</p>
 
     <div class="tabela-rolagem" th:unless="${#lists.isEmpty(trechos)}">
@@ -40,6 +45,9 @@
                 </td>
                 <td>
                     <span class="etiqueta"
+                          th:if="${contagemBarreirasIndisponivel}">indisponível</span>
+                    <span class="etiqueta"
+                          th:unless="${contagemBarreirasIndisponivel}"
                           th:classappend="${barreirasPorTrecho.getOrDefault(t.idTrecho, 0) > 0} ? 'etiqueta-alerta' : 'etiqueta-ok'"
                           th:text="${barreirasPorTrecho.getOrDefault(t.idTrecho, 0)}">0</span>
                 </td>

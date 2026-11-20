@@ -1,9 +1,13 @@
 package br.com.fiap.controller;
 
 import br.com.fiap.bo.TrechoBO;
+import br.com.fiap.contingencia.DadosContingencia;
 import br.com.fiap.entities.Trecho;
+import br.com.fiap.excecoes.PersistenciaException;
 import br.com.fiap.excecoes.RecursoNaoEncontradoException;
 import br.com.fiap.excecoes.RegraNegocioException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -24,16 +28,29 @@ import java.util.Map;
 
 /**
  * API REST de trechos de calcada.
+ *
+ * <p>Em falha de persistencia a listagem responde 200 com o snapshot de
+ * contingencia e o header {@code X-Dados-De-Cache: true}, sinalizando que o
+ * dado nao e uma leitura atual do banco.</p>
  */
 @RestController
 @RequestMapping(value = "/api/trechos", produces = MediaType.APPLICATION_JSON_VALUE)
 public class TrechoController {
 
+    private static final Logger LOG = LoggerFactory.getLogger(TrechoController.class);
+
     private final TrechoBO trechoBO = new TrechoBO();
 
     @GetMapping
     public ResponseEntity<List<Trecho>> listar() {
-        return ResponseEntity.ok(trechoBO.listar());
+        try {
+            return ResponseEntity.ok(trechoBO.listar());
+        } catch (PersistenciaException e) {
+            LOG.warn("Falha ao listar trechos na API; servindo snapshot de contingência", e);
+            return ResponseEntity.ok()
+                    .header(DadosContingencia.CABECALHO_DADOS_DE_CACHE, "true")
+                    .body(DadosContingencia.trechos());
+        }
     }
 
     @GetMapping("/prioridade")
