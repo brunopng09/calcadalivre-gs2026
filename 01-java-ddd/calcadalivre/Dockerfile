@@ -19,4 +19,6 @@ EXPOSE 8080
 
 # Inicia a aplicacao Spring Boot
 # O Spring Boot gera o JAR executavel dentro da pasta target
-CMD ["sh", "-c", "java -jar target/*.jar"]
+# -Djava.net.preferIPv4Stack=true garante bind em IPv4 (0.0.0.0), exigido pelo
+# health check e pelo scanner de portas do Render
+CMD ["sh", "-c", "java -Djava.net.preferIPv4Stack=true -jar target/*.jar"]
