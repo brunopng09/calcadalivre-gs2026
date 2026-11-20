@@ -4,6 +4,8 @@ import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import java.time.LocalDateTime;
@@ -16,6 +18,8 @@ import java.util.Map;
  */
 @RestControllerAdvice
 public class GlobalExceptionHandler {
+
+    private static final Logger LOG = LoggerFactory.getLogger(GlobalExceptionHandler.class);
 
     @ExceptionHandler(RecursoNaoEncontradoException.class)
     public ResponseEntity<Map<String, Object>> tratarNaoEncontrado(RecursoNaoEncontradoException excecao,
@@ -32,6 +36,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(PersistenciaException.class)
     public ResponseEntity<Map<String, Object>> tratarPersistencia(PersistenciaException excecao,
                                                                   HttpServletRequest requisicao) {
+        LOG.error("Falha de persistencia em {}", requisicao.getRequestURI(), excecao);
         return resposta(HttpStatus.INTERNAL_SERVER_ERROR, "Erro de persistência", excecao.getMessage(), requisicao);
     }
 
