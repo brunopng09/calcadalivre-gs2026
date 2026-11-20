@@ -1,4 +1,4 @@
-﻿# CalçadaLivre
+# CalçadaLivre
 
 Sistema que mapeia trechos de calçada, registra barreiras de acessibilidade e calcula a
 prioridade de manutenção a partir do índice de acessibilidade e do tipo de via.
@@ -184,11 +184,22 @@ superfície `#F8FAFC`).
 5. Em **Environment**, cadastre as variáveis:
    - `DB_USUARIO` — usuário do schema Oracle FIAP;
    - `DB_SENHA` — senha do schema Oracle FIAP.
-6. Confirme o **Health Check Path** como `/` e faça o deploy. O Render injeta a porta em
-   `PORT`, já lida por `server.port=${PORT:8080}`.
+6. Confirme o **Health Check Path** como `/health.txt` (arquivo estático, não consulta o banco) e
+   faça o deploy. O Render injeta a porta em `PORT`, já lida por `server.port=${PORT:8080}`.
 
-Serviço publicado: <https://calcadalivre.onrender.com> (deploy em 16/11/2026). No plano Free ele hiberna
-após ~15 min sem acesso.
+Serviço publicado: <https://calcadalivre.onrender.com>. No plano Free ele hiberna após ~15 min sem
+acesso.
+
+### Diagnóstico e modo contingência
+
+- `GET /health.txt` — responde `ok` sem tocar no banco; é o health check usado pelo Render.
+- `GET /health/db` — testa a conexão de verdade e, em falha, devolve `503` com o código `ORA-` do
+  driver (sem expor usuário nem senha).
+- Se a persistência falhar, as telas e as rotas de leitura (`/`, `/trechos`, `/api/trechos`,
+  `/api/barreiras/tipos`) passam a servir o último snapshot conhecido em
+  `src/main/resources/fallback/` (capturado em 16/11/2026, com o banco no ar): a página exibe um
+  banner de contingência e a API sinaliza com o cabeçalho `X-Dados-De-Cache: true`. As rotas de
+  escrita continuam falhando de verdade — não existe gravação em cache.
 
 O arquivo `render.yaml` na pasta `01-java-ddd/calcadalivre` descreve o mesmo serviço e pode ser usado com
 **New → Blueprint** (as credenciais ficam com `sync: false`, ou seja, são informadas no
